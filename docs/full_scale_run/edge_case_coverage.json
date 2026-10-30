@@ -1,0 +1,26 @@
+{
+  "boundary": {
+    "orders_exactly_at_moq": 648,
+    "pairs_inventory_position_equal_to_reorder_point": 9,
+    "skus_launching_on_first_day_of_window": 20,
+    "supplier_sku_with_single_observation": 5,
+    "unit_tests": "tests/test_business_rules.py covers exact-MOQ, exact-ROP, pack/MOQ/capacity conflict boundaries",
+    "zero_sales_pairs_without_any_stockout": 7
+  },
+  "failure_exception": {
+    "blocked_by_reason": {
+      "CAPACITY": 47,
+      "DISCONTINUED_SKU": 498,
+      "MOQ_CONFLICT": 1,
+      "NOT_YET_LAUNCHED": 315,
+      "NO_VALID_SUPPLIER": 235
+    },
+    "capacity_reduced": 6,
+    "skus_supplier_lapsed": 30
+  },
+  "injected_labelled_anomalies": "see ground_truth/ground_truth.csv (5 issue types)",
+  "normal": {
+    "no_action_pairs": 12381,
+    "orders_drafted": 1924
+  }
+}

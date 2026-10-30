@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+data/full/
+data/small/
+data/tiny/
+*.zip

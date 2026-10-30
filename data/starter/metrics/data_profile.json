@@ -1,0 +1,131 @@
+{
+  "assortment_density": 0.536,
+  "category_monthly_mean_daily_units": {
+    "Apparel": {
+      "10": 0.7579,
+      "11": 0.744,
+      "12": 0.8167,
+      "9": 0.7458
+    },
+    "Beverages": {
+      "10": 0.4909,
+      "11": 0.3577,
+      "12": 0.3499,
+      "9": 0.5069
+    },
+    "Electronics": {
+      "10": 0.182,
+      "11": 0.2439,
+      "12": 0.2972,
+      "9": 0.1516
+    },
+    "Garden": {
+      "10": 0.2,
+      "11": 0.1417,
+      "12": 0.1331,
+      "9": 0.2262
+    },
+    "Grocery": {
+      "10": 0.6598,
+      "11": 0.5852,
+      "12": 0.6017,
+      "9": 0.5179
+    },
+    "Household": {
+      "10": 0.1727,
+      "11": 0.1892,
+      "9": 0.1429
+    },
+    "PersonalCare": {
+      "10": 0.1827,
+      "11": 0.2541,
+      "12": 0.3199,
+      "9": 0.1875
+    },
+    "SummerSeasonal": {
+      "10": 0.239,
+      "11": 0.1804,
+      "12": 0.0835,
+      "9": 0.3061
+    },
+    "Toys": {
+      "10": 0.2041,
+      "11": 0.1933,
+      "12": 0.2334,
+      "9": 0.162
+    },
+    "WinterSeasonal": {
+      "10": 0.4605,
+      "11": 0.5271,
+      "12": 0.5321,
+      "9": 0.3122
+    }
+  },
+  "delayed_deliveries_share": 0.0583,
+  "demand_segments": {
+    "ERRATIC": 0,
+    "INTERMITTENT": 124,
+    "LUMPY": 3,
+    "NEW": 6,
+    "SMOOTH": 1
+  },
+  "history_days": 120,
+  "mean_daily_units_per_pair_quantiles": {
+    "p10": 0.05,
+    "p50": 0.1826,
+    "p90": 0.8724,
+    "p99": 1.773
+  },
+  "n_skus": 50,
+  "n_store_sku_pairs": 134,
+  "n_stores": 5,
+  "pack_size_distribution": {
+    "1": 17,
+    "12": 5,
+    "2": 3,
+    "24": 7,
+    "3": 10,
+    "4": 3,
+    "5": 1,
+    "6": 13
+  },
+  "promo_day_share": 0.0984,
+  "promo_uplift_observed": 2.0,
+  "sales_rows": 14445,
+  "simulated_fill_rate": 0.8692,
+  "skus_by_status": {
+    "ACTIVE": 47,
+    "DISCONTINUED": 2,
+    "PLANNED": 1
+  },
+  "stockout_flag_share_of_active_days": 0.0645,
+  "supplier_lead_time_days": {
+    "SUP-000001": {
+      "mean": 8.27,
+      "n": 132,
+      "sd": 2.47
+    },
+    "SUP-000002": {
+      "mean": 10.75,
+      "n": 65,
+      "sd": 2.33
+    },
+    "SUP-000003": {
+      "mean": 6.93,
+      "n": 98,
+      "sd": 2.82
+    },
+    "SUP-000004": {
+      "mean": 10.44,
+      "n": 48,
+      "sd": 3.39
+    },
+    "SUP-000005": {
+      "mean": 10.68,
+      "n": 137,
+      "sd": 3.06
+    }
+  },
+  "suppliers_with_multiple_skus": 5,
+  "zero_sales_share_of_in_stock_days": 0.7797
+}

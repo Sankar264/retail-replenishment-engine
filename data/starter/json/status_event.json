@@ -1,0 +1,3935 @@
+[
+ {
+  "event_id": "EVT-0000001",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000001",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-01-24",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000002",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000002",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2023-09-16",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000003",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000003",
+  "old_status": null,
+  "new_status": "PLANNED",
+  "event_date": "2025-09-03",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000004",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000003",
+  "old_status": "PLANNED",
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-21",
+  "reason": "LAUNCH"
+ },
+ {
+  "event_id": "EVT-0000005",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000004",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-05-25",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000006",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000005",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-06-17",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000007",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000006",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-09-03",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000008",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000007",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2023-03-31",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000009",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000008",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-02-16",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000010",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000009",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-06-19",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000011",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000010",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-11-28",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000012",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000011",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-07-03",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000013",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000012",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2023-10-02",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000014",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000013",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-11-26",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000015",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000014",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-03-24",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000016",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000015",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-03-22",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000017",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000015",
+  "old_status": "ACTIVE",
+  "new_status": "DISCONTINUED",
+  "event_date": "2025-12-07",
+  "reason": "DISCONTINUED"
+ },
+ {
+  "event_id": "EVT-0000018",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000016",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2023-09-21",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000019",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000017",
+  "old_status": null,
+  "new_status": "PLANNED",
+  "event_date": "2025-09-03",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000020",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000018",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2023-09-21",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000021",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000019",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-01-05",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000022",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000020",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-07-05",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000023",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000021",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2023-01-14",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000024",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000022",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-01-01",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000025",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000023",
+  "old_status": null,
+  "new_status": "PLANNED",
+  "event_date": "2025-09-03",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000026",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000023",
+  "old_status": "PLANNED",
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-04",
+  "reason": "LAUNCH"
+ },
+ {
+  "event_id": "EVT-0000027",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000024",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-06-20",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000028",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000025",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2023-05-27",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000029",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000026",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-05-22",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000030",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000027",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-02-25",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000031",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000027",
+  "old_status": "ACTIVE",
+  "new_status": "DISCONTINUED",
+  "event_date": "2025-10-27",
+  "reason": "DISCONTINUED"
+ },
+ {
+  "event_id": "EVT-0000032",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000028",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2023-12-24",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000033",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000029",
+  "old_status": null,
+  "new_status": "PLANNED",
+  "event_date": "2025-09-03",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000034",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000029",
+  "old_status": "PLANNED",
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-08",
+  "reason": "LAUNCH"
+ },
+ {
+  "event_id": "EVT-0000035",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000030",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-02-10",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000036",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000031",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-12-12",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000037",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000032",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2023-09-20",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000038",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000033",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-10-27",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000039",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000034",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-07-19",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000040",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000035",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2023-06-07",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000041",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000036",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2023-09-05",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000042",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000037",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-07-30",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000043",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000038",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-07-29",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000044",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000039",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2023-10-21",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000045",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000040",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2022-12-28",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000046",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000041",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-09-24",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000047",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000042",
+  "old_status": null,
+  "new_status": "PLANNED",
+  "event_date": "2025-09-03",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000048",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000042",
+  "old_status": "PLANNED",
+  "new_status": "ACTIVE",
+  "event_date": "2025-12-01",
+  "reason": "LAUNCH"
+ },
+ {
+  "event_id": "EVT-0000049",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000043",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-09-26",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000050",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000044",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-02-12",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000051",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000045",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-10-01",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000052",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000046",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-04-15",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000053",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000047",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2024-11-02",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000054",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000048",
+  "old_status": null,
+  "new_status": "PLANNED",
+  "event_date": "2025-09-03",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000055",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000048",
+  "old_status": "PLANNED",
+  "new_status": "ACTIVE",
+  "event_date": "2025-10-03",
+  "reason": "LAUNCH"
+ },
+ {
+  "event_id": "EVT-0000056",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000049",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2023-07-12",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000057",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000050",
+  "old_status": null,
+  "new_status": "PLANNED",
+  "event_date": "2025-09-03",
+  "reason": "SKU_CREATED"
+ },
+ {
+  "event_id": "EVT-0000058",
+  "entity_type": "SKU",
+  "entity_id": "SKU-000050",
+  "old_status": "PLANNED",
+  "new_status": "ACTIVE",
+  "event_date": "2025-10-02",
+  "reason": "LAUNCH"
+ },
+ {
+  "event_id": "EVT-0000059",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000001",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000060",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000001",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000061",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000002",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000062",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000003",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000063",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000003",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000064",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000004",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000065",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000005",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000066",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000005",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000067",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000006",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000068",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000007",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000069",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000007",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000070",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000008",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000071",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000009",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000072",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000009",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000073",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000010",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000074",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000011",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000075",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000011",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000076",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000012",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000077",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000013",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000078",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000013",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000079",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000014",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000080",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000014",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000081",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000015",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000082",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000016",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000083",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000016",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000084",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000017",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000085",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000018",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000086",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000018",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000087",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000019",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000088",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000020",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000089",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000020",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000090",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000021",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000091",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000022",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000092",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000022",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000093",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000023",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000094",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000024",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000095",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000024",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000096",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000025",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000097",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000026",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000098",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000027",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000099",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000027",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000100",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000028",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000101",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000029",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000102",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000029",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000103",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000030",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000104",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000031",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000105",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000031",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000106",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000032",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000107",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000033",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000108",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000033",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000109",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000034",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000110",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000035",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000111",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000035",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000112",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000036",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000113",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000037",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000114",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000037",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000115",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000038",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000116",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000039",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000117",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000040",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000118",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000040",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000119",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000041",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000120",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000042",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000121",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000042",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000122",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000043",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000123",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000044",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000124",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000044",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000125",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000045",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000126",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000046",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000127",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000046",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000128",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000047",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000129",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000048",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000130",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000048",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000131",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000049",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000132",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000050",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000133",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000050",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000134",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000051",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000135",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000052",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000136",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000052",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000137",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000053",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000138",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000054",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000139",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000054",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000140",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000055",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000141",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000056",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000142",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000056",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000143",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000057",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000144",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000058",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000145",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000058",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000146",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000059",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000147",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000059",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000148",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000060",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000149",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000061",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000150",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000061",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000151",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000062",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000152",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000063",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000153",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000063",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000154",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000064",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000155",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000065",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000156",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000065",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000157",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000066",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000158",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000067",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000159",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000068",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000160",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000068",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000161",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000069",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000162",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000070",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000163",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000070",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000164",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000071",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000165",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000072",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000166",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000072",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000167",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000073",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000168",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000074",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000169",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000074",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000170",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000075",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000171",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000076",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000172",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000076",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000173",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000077",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000174",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000078",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000175",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000078",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000176",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000079",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000177",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000080",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000178",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000080",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000179",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000081",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000180",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000082",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000181",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000082",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000182",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000083",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000183",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000084",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000184",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000084",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000185",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000085",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000186",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000086",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000187",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000086",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000188",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000087",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000189",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000088",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000190",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000088",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000191",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000089",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000192",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000090",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000193",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000090",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000194",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000091",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000195",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000092",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000196",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000092",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000197",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000093",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000198",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000094",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000199",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000094",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000200",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000095",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000201",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000096",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000202",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000096",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000203",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000097",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000204",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000098",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000205",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000098",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000206",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000099",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000207",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000100",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000208",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000100",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000209",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000101",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000210",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000102",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000211",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000102",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000212",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000103",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000213",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000104",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000214",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000104",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000215",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000105",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000216",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000106",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000217",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000106",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000218",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000107",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000219",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000108",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000220",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000108",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000221",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000109",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000222",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000110",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000223",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000110",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000224",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000111",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000225",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000112",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000226",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000112",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000227",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000113",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000228",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000114",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000229",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000114",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000230",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000115",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000231",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000116",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000232",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000116",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000233",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000117",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000234",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000118",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000235",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000119",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000236",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000119",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000237",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000120",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000238",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000121",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000239",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000121",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000240",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000122",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000241",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000123",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000242",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000123",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000243",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000124",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000244",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000124",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000245",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000125",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000246",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000126",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000247",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000126",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000248",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000127",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000249",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000128",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000250",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000128",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000251",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000129",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000252",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000130",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000253",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000130",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000254",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000131",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000255",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000132",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000256",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000132",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000257",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000133",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000258",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000134",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000259",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000134",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000260",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000135",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000261",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000136",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000262",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000136",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000263",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000137",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000264",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000137",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000265",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000138",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000266",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000139",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000267",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000139",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000268",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000140",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000269",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000141",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000270",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000141",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000271",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000142",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000272",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000143",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000273",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000143",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000274",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000144",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000275",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000145",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000276",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000145",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000277",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000146",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000278",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000147",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000279",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000148",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000280",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000148",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000281",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000149",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000282",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000150",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000283",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000151",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000284",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000151",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000285",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000152",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000286",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000153",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000287",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000153",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000288",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000154",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000289",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000155",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000290",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000155",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000291",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000156",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000292",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000157",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000293",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000157",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000294",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000158",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000295",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000159",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000296",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000159",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000297",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000160",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000298",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000161",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000299",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000161",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000300",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000162",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000301",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000163",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000302",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000163",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000303",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000164",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000304",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000165",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000305",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000165",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000306",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000166",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000307",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000167",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000308",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000167",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000309",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000168",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000310",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000169",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000311",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000169",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000312",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000170",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000313",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000171",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000314",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000171",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000315",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000172",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000316",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000173",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000317",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000174",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000318",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000174",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000319",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000175",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000320",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000176",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000321",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000176",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000322",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000177",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000323",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000178",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000324",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000178",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000325",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000179",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000326",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000180",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000327",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000180",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000328",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000181",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000329",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000182",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000330",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000182",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000331",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000183",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000332",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000184",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000333",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000184",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000334",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000185",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000335",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000186",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000336",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000186",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000337",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000187",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000338",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000188",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000339",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000188",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000340",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000189",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000341",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000190",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000342",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000191",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000343",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000191",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000344",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000192",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000345",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000193",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000346",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000193",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000347",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000194",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000348",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000195",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000349",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000195",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000350",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000196",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000351",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000197",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000352",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000197",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000353",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000198",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000354",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000198",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000355",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000199",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000356",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000200",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000357",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000200",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000358",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000201",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000359",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000202",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000360",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000202",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000361",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000203",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000362",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000204",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000363",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000204",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000364",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000205",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000365",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000206",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000366",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000206",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000367",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000207",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000368",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000208",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000369",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000208",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000370",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000209",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000371",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000210",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000372",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000210",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000373",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000211",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000374",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000212",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000375",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000212",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000376",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000213",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000377",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000214",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000378",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000215",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000379",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000215",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000380",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000216",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000381",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000217",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000382",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000217",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000383",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000218",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000384",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000219",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000385",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000219",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000386",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000220",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000387",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000221",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000388",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000221",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000389",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000222",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000390",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000223",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000391",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000223",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000392",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000224",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000393",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000225",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000394",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000225",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000395",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000226",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000396",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000227",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000397",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000227",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000398",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000228",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000399",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000229",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000400",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000229",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000401",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000230",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000402",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000231",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000403",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000231",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000404",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000232",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000405",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000233",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000406",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000233",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000407",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000234",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000408",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000235",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2025-11-02",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000409",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000235",
+  "old_status": "ACTIVE",
+  "new_status": "SUPERSEDED",
+  "event_date": "2026-01-01",
+  "reason": "NEW_POLICY_VERSION"
+ },
+ {
+  "event_id": "EVT-0000410",
+  "entity_type": "REORDER_POLICY",
+  "entity_id": "POL-0000236",
+  "old_status": null,
+  "new_status": "ACTIVE",
+  "event_date": "2026-01-01",
+  "reason": "POLICY_CREATED"
+ },
+ {
+  "event_id": "EVT-0000411",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000003",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED"
+ },
+ {
+  "event_id": "EVT-0000412",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000005",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED"
+ },
+ {
+  "event_id": "EVT-0000413",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000006",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED"
+ },
+ {
+  "event_id": "EVT-0000414",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000007",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED"
+ },
+ {
+  "event_id": "EVT-0000415",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000009",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED"
+ },
+ {
+  "event_id": "EVT-0000416",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000012",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED"
+ },
+ {
+  "event_id": "EVT-0000417",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000014",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED"
+ },
+ {
+  "event_id": "EVT-0000418",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000020",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED"
+ },
+ {
+  "event_id": "EVT-0000419",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000025",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED"
+ },
+ {
+  "event_id": "EVT-0000420",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000027",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED"
+ },
+ {
+  "event_id": "EVT-0000421",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000031",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED"
+ },
+ {
+  "event_id": "EVT-0000422",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000032",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED"
+ },
+ {
+  "event_id": "EVT-0000423",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000033",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED"
+ },
+ {
+  "event_id": "EVT-0000424",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000034",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED"
+ },
+ {
+  "event_id": "EVT-0000425",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000003",
+  "old_status": "DRAFT",
+  "new_status": "APPROVED",
+  "event_date": "2026-01-02",
+  "reason": "OPS_APPROVAL"
+ },
+ {
+  "event_id": "EVT-0000426",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000005",
+  "old_status": "DRAFT",
+  "new_status": "APPROVED",
+  "event_date": "2026-01-02",
+  "reason": "OPS_APPROVAL"
+ },
+ {
+  "event_id": "EVT-0000427",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000007",
+  "old_status": "DRAFT",
+  "new_status": "CANCELLED",
+  "event_date": "2026-01-03",
+  "reason": "OPS_CANCELLED"
+ },
+ {
+  "event_id": "EVT-0000428",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000009",
+  "old_status": "DRAFT",
+  "new_status": "CANCELLED",
+  "event_date": "2026-01-03",
+  "reason": "OPS_CANCELLED"
+ },
+ {
+  "event_id": "EVT-0000429",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000012",
+  "old_status": "DRAFT",
+  "new_status": "APPROVED",
+  "event_date": "2026-01-02",
+  "reason": "OPS_APPROVAL"
+ },
+ {
+  "event_id": "EVT-0000430",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000014",
+  "old_status": "DRAFT",
+  "new_status": "APPROVED",
+  "event_date": "2026-01-02",
+  "reason": "OPS_APPROVAL"
+ },
+ {
+  "event_id": "EVT-0000431",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000020",
+  "old_status": "DRAFT",
+  "new_status": "APPROVED",
+  "event_date": "2026-01-02",
+  "reason": "OPS_APPROVAL"
+ },
+ {
+  "event_id": "EVT-0000432",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000025",
+  "old_status": "DRAFT",
+  "new_status": "CANCELLED",
+  "event_date": "2026-01-03",
+  "reason": "OPS_CANCELLED"
+ },
+ {
+  "event_id": "EVT-0000433",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000027",
+  "old_status": "DRAFT",
+  "new_status": "APPROVED",
+  "event_date": "2026-01-02",
+  "reason": "OPS_APPROVAL"
+ },
+ {
+  "event_id": "EVT-0000434",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000031",
+  "old_status": "DRAFT",
+  "new_status": "CANCELLED",
+  "event_date": "2026-01-03",
+  "reason": "OPS_CANCELLED"
+ },
+ {
+  "event_id": "EVT-0000435",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000032",
+  "old_status": "DRAFT",
+  "new_status": "APPROVED",
+  "event_date": "2026-01-02",
+  "reason": "OPS_APPROVAL"
+ },
+ {
+  "event_id": "EVT-0000436",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000033",
+  "old_status": "DRAFT",
+  "new_status": "APPROVED",
+  "event_date": "2026-01-02",
+  "reason": "OPS_APPROVAL"
+ },
+ {
+  "event_id": "EVT-0000437",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000034",
+  "old_status": "DRAFT",
+  "new_status": "APPROVED",
+  "event_date": "2026-01-02",
+  "reason": "OPS_APPROVAL"
+ }
+]

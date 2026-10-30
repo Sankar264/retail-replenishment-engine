@@ -1,0 +1,33 @@
+{
+  "historical_service": {
+    "avg_on_hand_units_per_pair_day": 12.359,
+    "avg_on_hand_value_per_pair_day": 184.01,
+    "fill_rate": 0.9055,
+    "lost_units_to_stockouts": 318960.0,
+    "source": "historical simulation under the (noisy) planner policy that generated the history",
+    "stockout_day_rate": 0.0571
+  },
+  "recommendations": {
+    "as_of_date": "2026-01-01",
+    "blocked_by_reason": {
+      "CAPACITY": 47,
+      "DISCONTINUED_SKU": 498,
+      "MOQ_CONFLICT": 1,
+      "NOT_YET_LAUNCHED": 315,
+      "NO_VALID_SUPPLIER": 235
+    },
+    "blocked_share": 0.3629139072847682,
+    "capacity_reduced": 6,
+    "low_confidence_orders": 0,
+    "n_blocked": 1096,
+    "n_no_action_inventory_above_reorder_point": 12381,
+    "n_orders_drafted": 1924,
+    "n_pairs_evaluated": 15401,
+    "n_recommendations": 3020,
+    "ordered_units": 25711,
+    "ordered_value": 519545.27,
+    "orders_exactly_at_moq": 648,
+    "pairs_with_inventory_position_equal_reorder_point": 9,
+    "store_capacity_headroom_after_orders_min": 0.04
+  }
+}

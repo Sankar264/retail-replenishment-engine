@@ -1,0 +1,554 @@
+{
+  "data_profile": {
+    "assortment_density": 0.536,
+    "category_monthly_mean_daily_units": {
+      "Apparel": {
+        "10": 0.7579,
+        "11": 0.744,
+        "12": 0.8167,
+        "9": 0.7458
+      },
+      "Beverages": {
+        "10": 0.4909,
+        "11": 0.3577,
+        "12": 0.3499,
+        "9": 0.5069
+      },
+      "Electronics": {
+        "10": 0.182,
+        "11": 0.2439,
+        "12": 0.2972,
+        "9": 0.1516
+      },
+      "Garden": {
+        "10": 0.2,
+        "11": 0.1417,
+        "12": 0.1331,
+        "9": 0.2262
+      },
+      "Grocery": {
+        "10": 0.6598,
+        "11": 0.5852,
+        "12": 0.6017,
+        "9": 0.5179
+      },
+      "Household": {
+        "10": 0.1727,
+        "11": 0.1892,
+        "9": 0.1429
+      },
+      "PersonalCare": {
+        "10": 0.1827,
+        "11": 0.2541,
+        "12": 0.3199,
+        "9": 0.1875
+      },
+      "SummerSeasonal": {
+        "10": 0.239,
+        "11": 0.1804,
+        "12": 0.0835,
+        "9": 0.3061
+      },
+      "Toys": {
+        "10": 0.2041,
+        "11": 0.1933,
+        "12": 0.2334,
+        "9": 0.162
+      },
+      "WinterSeasonal": {
+        "10": 0.4605,
+        "11": 0.5271,
+        "12": 0.5321,
+        "9": 0.3122
+      }
+    },
+    "delayed_deliveries_share": 0.0583,
+    "demand_segments": {
+      "ERRATIC": 0,
+      "INTERMITTENT": 124,
+      "LUMPY": 3,
+      "NEW": 6,
+      "SMOOTH": 1
+    },
+    "history_days": 120,
+    "mean_daily_units_per_pair_quantiles": {
+      "p10": 0.05,
+      "p50": 0.1826,
+      "p90": 0.8724,
+      "p99": 1.773
+    },
+    "n_skus": 50,
+    "n_store_sku_pairs": 134,
+    "n_stores": 5,
+    "pack_size_distribution": {
+      "1": 17,
+      "12": 5,
+      "2": 3,
+      "24": 7,
+      "3": 10,
+      "4": 3,
+      "5": 1,
+      "6": 13
+    },
+    "promo_day_share": 0.0984,
+    "promo_uplift_observed": 2.0,
+    "sales_rows": 14445,
+    "simulated_fill_rate": 0.8692,
+    "skus_by_status": {
+      "ACTIVE": 47,
+      "DISCONTINUED": 2,
+      "PLANNED": 1
+    },
+    "stockout_flag_share_of_active_days": 0.0645,
+    "supplier_lead_time_days": {
+      "SUP-000001": {
+        "mean": 8.27,
+        "n": 132,
+        "sd": 2.47
+      },
+      "SUP-000002": {
+        "mean": 10.75,
+        "n": 65,
+        "sd": 2.33
+      },
+      "SUP-000003": {
+        "mean": 6.93,
+        "n": 98,
+        "sd": 2.82
+      },
+      "SUP-000004": {
+        "mean": 10.44,
+        "n": 48,
+        "sd": 3.39
+      },
+      "SUP-000005": {
+        "mean": 10.68,
+        "n": 137,
+        "sd": 3.06
+      }
+    },
+    "suppliers_with_multiple_skus": 5,
+    "zero_sales_share_of_in_stock_days": 0.7797
+  },
+  "detector_scores": {
+    "DISCONTINUED_SKU_RECOMMENDED": {
+      "detected": 5,
+      "false_negatives": 0,
+      "false_positives": 0,
+      "injected": 5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "true_positives": 5
+    },
+    "FORECAST_LEAKAGE": {
+      "detected": 5,
+      "false_negatives": 0,
+      "false_positives": 0,
+      "injected": 5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "true_positives": 5
+    },
+    "NEGATIVE_LEAD_TIME": {
+      "detected": 5,
+      "false_negatives": 0,
+      "false_positives": 0,
+      "injected": 5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "true_positives": 5
+    },
+    "PACK_SIZE_VIOLATION": {
+      "detected": 5,
+      "false_negatives": 0,
+      "false_positives": 0,
+      "injected": 5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "true_positives": 5
+    },
+    "STOCKOUT_AS_ZERO_DEMAND": {
+      "detected": 5,
+      "false_negatives": 0,
+      "false_positives": 0,
+      "injected": 5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "true_positives": 5
+    }
+  },
+  "edge_case_coverage": {
+    "boundary": {
+      "orders_exactly_at_moq": 3,
+      "pairs_inventory_position_equal_to_reorder_point": 0,
+      "skus_launching_on_first_day_of_window": 1,
+      "supplier_sku_with_single_observation": 5,
+      "unit_tests": "tests/test_business_rules.py covers exact-MOQ, exact-ROP, pack/MOQ/capacity conflict boundaries",
+      "zero_sales_pairs_without_any_stockout": 0
+    },
+    "failure_exception": {
+      "blocked_by_reason": {
+        "CAPACITY": 6,
+        "DISCONTINUED_SKU": 6,
+        "NOT_YET_LAUNCHED": 5,
+        "NO_VALID_SUPPLIER": 3
+      },
+      "capacity_reduced": 2,
+      "skus_supplier_lapsed": 1
+    },
+    "injected_labelled_anomalies": "see ground_truth/ground_truth.csv (5 issue types)",
+    "normal": {
+      "no_action_pairs": 100,
+      "orders_drafted": 14
+    }
+  },
+  "historical_service_kpis": {
+    "avg_on_hand_units_per_pair_day": 7.777,
+    "avg_on_hand_value_per_pair_day": 151.53,
+    "fill_rate": 0.8692,
+    "lost_units_to_stockouts": 699.0,
+    "source": "historical simulation under the (noisy) planner policy that generated the history",
+    "stockout_day_rate": 0.0645
+  },
+  "holdout": {
+    "censored_test_days_excluded": 244,
+    "cutoff_day_index": 90,
+    "hybrid_vs_naive_wape_improvement_pct": 1.12,
+    "methods": {
+      "hybrid": {
+        "by_segment": {
+          "INTERMITTENT": {
+            "bias": -0.01809106072970644,
+            "mae": 0.3745112031516644,
+            "mase": 1.0780277369034703,
+            "n_obs": 3153,
+            "n_pairs": 117,
+            "wape": 1.197600226711154,
+            "weekly_wape": 0.6267084372806913
+          },
+          "LUMPY": {
+            "bias": 0.015157882056895512,
+            "mae": 1.0329222024042741,
+            "mase": 0.6306148696722016,
+            "n_obs": 54,
+            "n_pairs": 2,
+            "wape": 0.9453864225395052,
+            "weekly_wape": 0.38826909802702103
+          },
+          "NEW": {
+            "bias": -0.6664299238769372,
+            "mae": 0.5609506856620928,
+            "mase": 2.3935158325503343,
+            "n_obs": 232,
+            "n_pairs": 14,
+            "wape": 1.0411244725888444,
+            "weekly_wape": 0.7202392813781485
+          },
+          "SMOOTH": {
+            "bias": -0.09723817102501325,
+            "mae": 1.8003490603724,
+            "mase": 0.6693605480871744,
+            "n_obs": 17,
+            "n_pairs": 1,
+            "wape": 0.612118680526616,
+            "weekly_wape": 0.4213744012022035
+          }
+        },
+        "overall_daily": {
+          "bias": -0.0861550162901652,
+          "mae": 0.4043281584395154,
+          "mase": 1.1227222077081775,
+          "n_obs": 3456,
+          "wape": 1.1453755045630865
+        },
+        "overall_weekly": {
+          "bias": -0.056148930642276315,
+          "mae": 1.4214430398828297,
+          "mase": null,
+          "n_obs": 465,
+          "wape": 0.6171531405653742
+        }
+      },
+      "naive_last28": {
+        "by_segment": {
+          "INTERMITTENT": {
+            "bias": 0.04521782835692171,
+            "mae": 0.3788839845764669,
+            "mase": 1.1304745211556948,
+            "n_obs": 3153,
+            "n_pairs": 117,
+            "wape": 1.2115833705574037,
+            "weekly_wape": 0.6354810320561894
+          },
+          "LUMPY": {
+            "bias": 0.27118644067796616,
+            "mae": 1.0727513227513228,
+            "mase": 0.637737797370825,
+            "n_obs": 54,
+            "n_pairs": 2,
+            "wape": 0.9818401937046005,
+            "weekly_wape": 0.6029411764705884
+          },
+          "NEW": {
+            "bias": -0.7667272727272727,
+            "mae": 0.5512343260188088,
+            "mase": 2.2194834710743807,
+            "n_obs": 232,
+            "n_pairs": 14,
+            "wape": 1.0230909090909093,
+            "weekly_wape": 0.8067193675889327
+          },
+          "SMOOTH": {
+            "bias": -0.05555555555555559,
+            "mae": 1.9281045751633987,
+            "mase": 0.7168593933299816,
+            "n_obs": 17,
+            "n_pairs": 1,
+            "wape": 0.6555555555555556,
+            "weekly_wape": 0.4056847545219639
+          }
+        },
+        "overall_daily": {
+          "bias": -0.031175334515378735,
+          "mae": 0.4089160637188406,
+          "mase": 1.1647622853438129,
+          "n_obs": 3456,
+          "wape": 1.158372062469109
+        },
+        "overall_weekly": {
+          "bias": -0.012496118629649874,
+          "mae": 1.4811867125798002,
+          "mase": null,
+          "n_obs": 465,
+          "wape": 0.6430922701677003
+        }
+      },
+      "sba": {
+        "by_segment": {
+          "INTERMITTENT": {
+            "bias": -0.09391020658317493,
+            "mae": 0.3683022092492012,
+            "mase": 1.0647112713173164,
+            "n_obs": 3153,
+            "n_pairs": 117,
+            "wape": 1.1777452999622022,
+            "weekly_wape": 0.6083387368600212
+          },
+          "LUMPY": {
+            "bias": 0.018509934684091865,
+            "mae": 1.0118594124159042,
+            "mase": 0.6112197922319602,
+            "n_obs": 54,
+            "n_pairs": 2,
+            "wape": 0.9261086147535393,
+            "weekly_wape": 0.38826909802702103
+          },
+          "NEW": {
+            "bias": -0.7763296167928502,
+            "mae": 0.5533837490601172,
+            "mase": 2.240724960084514,
+            "n_obs": 232,
+            "n_pairs": 14,
+            "wape": 1.0270802382555775,
+            "weekly_wape": 0.8196816016294711
+          },
+          "SMOOTH": {
+            "bias": -0.19185627333042413,
+            "mae": 1.904523136102003,
+            "mase": 0.7080919352174113,
+            "n_obs": 17,
+            "n_pairs": 1,
+            "wape": 0.647537866274681,
+            "weekly_wape": 0.4243305435472537
+          }
+        },
+        "overall_daily": {
+          "bias": -0.16240769943465289,
+          "mae": 0.39833888805812245,
+          "mase": 1.1038338658051587,
+          "n_obs": 3456,
+          "wape": 1.1284091779744847
+        },
+        "overall_weekly": {
+          "bias": -0.1414555188797809,
+          "mae": 1.4122565865218006,
+          "mase": null,
+          "n_obs": 465,
+          "wape": 0.6131646244002216
+        }
+      },
+      "seasonal_naive": {
+        "by_segment": {
+          "INTERMITTENT": {
+            "bias": 0.01027600695450592,
+            "mae": 0.3861654810988779,
+            "mase": 1.1031478718741745,
+            "n_obs": 3153,
+            "n_pairs": 117,
+            "wape": 1.2348679126823143,
+            "weekly_wape": 0.6446483813943211
+          },
+          "LUMPY": {
+            "bias": 0.401775625504439,
+            "mae": 1.2880952380952382,
+            "mase": 0.7833729827766525,
+            "n_obs": 54,
+            "n_pairs": 2,
+            "wape": 1.1789346246973367,
+            "weekly_wape": 0.7239962651727357
+          },
+          "NEW": {
+            "bias": -0.7666666666666666,
+            "mae": 0.5373563218390804,
+            "mase": 2.2141666666666664,
+            "n_obs": 232,
+            "n_pairs": 14,
+            "wape": 0.9973333333333333,
+            "weekly_wape": 0.8057971014492754
+          },
+          "SMOOTH": {
+            "bias": -0.01295238095238096,
+            "mae": 1.7257703081232494,
+            "mase": 0.6416325504560799,
+            "n_obs": 17,
+            "n_pairs": 1,
+            "wape": 0.5867619047619048,
+            "weekly_wape": 0.3883720930232557
+          }
+        },
+        "overall_daily": {
+          "bias": -0.0513475800156128,
+          "mae": 0.4169970100308642,
+          "mase": 1.1408938792839145,
+          "n_obs": 3456,
+          "wape": 1.1812636612021858
+        },
+        "overall_weekly": {
+          "bias": -0.02465097149971101,
+          "mae": 1.5096287762416793,
+          "mase": null,
+          "n_obs": 465,
+          "wape": 0.6554410653150149
+        }
+      },
+      "ses": {
+        "by_segment": {
+          "INTERMITTENT": {
+            "bias": -0.05002118258636752,
+            "mae": 0.36708088883196593,
+            "mase": 1.1098582055257673,
+            "n_obs": 3153,
+            "n_pairs": 117,
+            "wape": 1.1738397996827472,
+            "weekly_wape": 0.6290959768275517
+          },
+          "LUMPY": {
+            "bias": -0.07839997304548645,
+            "mae": 0.9534994640122265,
+            "mase": 0.5786872764362527,
+            "n_obs": 54,
+            "n_pairs": 2,
+            "wape": 0.8726944246891565,
+            "weekly_wape": 0.3180327552625415
+          },
+          "NEW": {
+            "bias": -0.793499720559895,
+            "mae": 0.5528818875653725,
+            "mase": 2.2150252551581486,
+            "n_obs": 232,
+            "n_pairs": 14,
+            "wape": 1.0261487833213314,
+            "weekly_wape": 0.8354451338714862
+          },
+          "SMOOTH": {
+            "bias": -0.09927728407238677,
+            "mae": 1.9205402622712133,
+            "mase": 0.7140470205880152,
+            "n_obs": 17,
+            "n_pairs": 1,
+            "wape": 0.6529836891722125,
+            "weekly_wape": 0.4116658391343895
+          }
+        },
+        "overall_daily": {
+          "bias": -0.12958837189626907,
+          "mae": 0.39635786918912785,
+          "mase": 1.1443300886193697,
+          "n_obs": 3456,
+          "wape": 1.122797373702972
+        },
+        "overall_weekly": {
+          "bias": -0.11130186772452152,
+          "mae": 1.4457596215521267,
+          "mase": null,
+          "n_obs": 465,
+          "wape": 0.627710760057646
+        }
+      }
+    },
+    "metric_basis": "in-stock, non-flagged test days only (stockout-censored days excluded)",
+    "segment_counts": {
+      "ERRATIC": 0,
+      "INTERMITTENT": 117,
+      "LUMPY": 2,
+      "NEW": 14,
+      "SMOOTH": 1
+    },
+    "test_days": 30,
+    "test_end_date": "2025-12-31",
+    "test_start_date": "2025-12-02",
+    "train_days": 90,
+    "train_end_date": "2025-12-01"
+  },
+  "replenishment": {
+    "as_of_date": "2026-01-01",
+    "blocked_by_reason": {
+      "CAPACITY": 6,
+      "DISCONTINUED_SKU": 6,
+      "NOT_YET_LAUNCHED": 5,
+      "NO_VALID_SUPPLIER": 3
+    },
+    "blocked_share": 0.5882352941176471,
+    "capacity_reduced": 2,
+    "low_confidence_orders": 0,
+    "n_blocked": 20,
+    "n_no_action_inventory_above_reorder_point": 100,
+    "n_orders_drafted": 14,
+    "n_pairs_evaluated": 134,
+    "n_recommendations": 34,
+    "ordered_units": 145,
+    "ordered_value": 3180.64,
+    "orders_exactly_at_moq": 3,
+    "pairs_with_inventory_position_equal_reorder_point": 0,
+    "store_capacity_headroom_after_orders_min": 0.52
+  },
+  "rows": {
+    "exception_log": 22,
+    "forecast": 123,
+    "inventory_snapshot": 14445,
+    "lead_time_observation": 485,
+    "purchase_recommendation": 34,
+    "reorder_policy": 236,
+    "sales_history": 14445,
+    "sku": 50,
+    "status_event": 437,
+    "store": 5,
+    "store_sku": 134,
+    "supplier": 5,
+    "supplier_sku": 59
+  },
+  "scale": "starter",
+  "seed": 20261022,
+  "validation": {
+    "baseline_anomaly_detector_violations": {
+      "detect.discontinued_sku_recommended": 0,
+      "detect.forecast_uses_future_sales": 0,
+      "detect.negative_lead_time": 0,
+      "detect.order_qty_not_multiple_of_pack_size": 0,
+      "detect.stockout_flagged_as_zero_demand": 0
+    },
+    "baseline_structural_violations": 0,
+    "injected_failed_structural_checks": [],
+    "injected_structural_violations": 0
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "environment": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "python": "3.12.3"
+  },
+  "generator_command": "python -m src.pipeline --scale full --seed 20261022 --out data/full",
+  "ground_truth_rows": 500,
+  "parameters": {
+    "as_of_date": "2026-01-01",
+    "density": [
+      0.05,
+      0.12
+    ],
+    "end_date": "2025-12-31",
+    "forecast_horizon_days": 31,
+    "forecast_month": "2026-01",
+    "holdout_days": 65,
+    "inject_per_type": 100,
+    "json_max_rows": 250000,
+    "min_history_days": 56,
+    "n_days": 365,
+    "n_skus": 2000,
+    "n_stores": 100,
+    "n_suppliers": 40,
+    "scale": "full",
+    "seed": 20261022,
+    "sql_insert_max_rows": 200000,
+    "start_date": "2025-01-01"
+  },
+  "replenishment": {
+    "fast_review_period_days": 3,
+    "review_period_days": 7,
+    "service_levels": {
+      "ERRATIC": 0.95,
+      "INTERMITTENT": 0.9,
+      "LUMPY": 0.9,
+      "NEW": 0.9,
+      "SMOOTH": 0.95
+    }
+  },
+  "row_counts": {
+    "exception_log": 1102,
+    "forecast": 14588,
+    "inventory_snapshot": 5160733,
+    "lead_time_observation": 196823,
+    "purchase_recommendation": 3020,
+    "reorder_policy": 28152,
+    "sales_history": 5160733,
+    "sku": 2000,
+    "status_event": 47553,
+    "store": 100,
+    "store_sku": 15401,
+    "supplier": 40,
+    "supplier_sku": 2493
+  },
+  "scale": "full",
+  "seed": 20261022,
+  "sql_seed_mode": {
+    "exception_log": "insert",
+    "forecast": "insert",
+    "inventory_snapshot": "csv-only",
+    "lead_time_observation": "insert",
+    "purchase_recommendation": "insert",
+    "reorder_policy": "insert",
+    "sales_history": "csv-only",
+    "sku": "insert",
+    "status_event": "insert",
+    "store": "insert",
+    "store_sku": "insert",
+    "supplier": "insert",
+    "supplier_sku": "insert"
+  }
+}

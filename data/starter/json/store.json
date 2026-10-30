@@ -1,0 +1,47 @@
+[
+ {
+  "store_id": "STORE-000001",
+  "name": "Store 001",
+  "region": "EAST",
+  "format": "SUPER",
+  "capacity_units": 469,
+  "open_date": "2018-07-05",
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000002",
+  "name": "Store 002",
+  "region": "CENTRAL",
+  "format": "EXPRESS",
+  "capacity_units": 201,
+  "open_date": "2019-09-11",
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000003",
+  "name": "Store 003",
+  "region": "SOUTH",
+  "format": "EXPRESS",
+  "capacity_units": 244,
+  "open_date": "2022-10-10",
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "name": "Store 004",
+  "region": "NORTH",
+  "format": "SUPER",
+  "capacity_units": 708,
+  "open_date": "2021-03-19",
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "name": "Store 005",
+  "region": "EAST",
+  "format": "SUPER",
+  "capacity_units": 786,
+  "open_date": "2017-08-09",
+  "status": "ACTIVE"
+ }
+]

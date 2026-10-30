@@ -1,0 +1,47 @@
+{
+  "DISCONTINUED_SKU_RECOMMENDED": {
+    "detected": 100,
+    "false_negatives": 0,
+    "false_positives": 0,
+    "injected": 100,
+    "precision": 1.0,
+    "recall": 1.0,
+    "true_positives": 100
+  },
+  "FORECAST_LEAKAGE": {
+    "detected": 100,
+    "false_negatives": 0,
+    "false_positives": 0,
+    "injected": 100,
+    "precision": 1.0,
+    "recall": 1.0,
+    "true_positives": 100
+  },
+  "NEGATIVE_LEAD_TIME": {
+    "detected": 100,
+    "false_negatives": 0,
+    "false_positives": 0,
+    "injected": 100,
+    "precision": 1.0,
+    "recall": 1.0,
+    "true_positives": 100
+  },
+  "PACK_SIZE_VIOLATION": {
+    "detected": 100,
+    "false_negatives": 0,
+    "false_positives": 0,
+    "injected": 100,
+    "precision": 1.0,
+    "recall": 1.0,
+    "true_positives": 100
+  },
+  "STOCKOUT_AS_ZERO_DEMAND": {
+    "detected": 100,
+    "false_negatives": 0,
+    "false_positives": 0,
+    "injected": 100,
+    "precision": 1.0,
+    "recall": 1.0,
+    "true_positives": 100
+  }
+}

@@ -1,0 +1,27 @@
+# Single source of truth for the generator, forecasting engine and replenishment engine.
+# The SAME generator code runs for every preset - only the scale parameters differ.
+seed: 20261022
+end_date: "2025-12-31"        # last day of sales/inventory history
+as_of_date: "2026-01-01"      # date recommendations are created
+forecast_month: "2026-01"     # forecast period (ID convention FC-<store>-<sku>-2026-01)
+forecast_horizon_days: 31
+
+defaults:
+  n_suppliers: 12
+  density: [0.30, 0.60]       # share of SKUs each store carries (assortment matrix)
+  holdout_days: 45            # temporal holdout = last N days of history
+  min_history_days: 28        # fewer in-stock days than this => NEW / cold start
+  inject_per_type: 6          # labelled anomalies injected per issue type
+  json_max_rows: 250000       # tables above this are exported as CSV only (+ SQL COPY)
+  sql_insert_max_rows: 200000 # tables above this use COPY/.import instead of INSERT
+
+presets:
+  tiny:    {n_skus: 40,   n_stores: 4,   n_days: 120, n_suppliers: 4,  density: [0.40, 0.70], holdout_days: 30, inject_per_type: 3}
+  starter: {n_skus: 50,   n_stores: 5,   n_days: 120, n_suppliers: 5,  density: [0.50, 0.80], holdout_days: 30, inject_per_type: 5}
+  small:   {n_skus: 300,  n_stores: 20,  n_days: 365, n_suppliers: 12, density: [0.10, 0.25], holdout_days: 65, inject_per_type: 20, min_history_days: 56}
+  full:    {n_skus: 2000, n_stores: 100, n_days: 365, n_suppliers: 40, density: [0.05, 0.12], holdout_days: 65, inject_per_type: 100, min_history_days: 56}
+
+replenishment:
+  review_period_days: 7
+  fast_review_period_days: 3   # for pairs forecast >= 2 units/day
+  service_levels: {SMOOTH: 0.95, ERRATIC: 0.95, INTERMITTENT: 0.90, LUMPY: 0.90, NEW: 0.90}
