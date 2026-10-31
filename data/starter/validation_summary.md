@@ -4,23 +4,23 @@ Scale: `starter` | seed: `20261022` | history: 2025-09-03 to 2025-12-31 (120 day
 
 ## 1. Clean baseline (before anomaly injection)
 
-- Structural checks: **225**, violations: **0**
+- Structural checks: **248**, violations: **0**
 - Anomaly detectors on the clean baseline (expected 0): {'detect.stockout_flagged_as_zero_demand': 0, 'detect.order_qty_not_multiple_of_pack_size': 0, 'detect.discontinued_sku_recommended': 0, 'detect.negative_lead_time': 0, 'detect.forecast_uses_future_sales': 0}
 
 | category | checks | rows checked | violations | failed checks |
 |---|---|---|---|---|
-| business_rule | 4 | 53 | 0 | 0 |
+| business_rule | 5 | 67 | 0 | 0 |
 | date_order | 4 | 581 | 0 | 0 |
 | duplicate | 2 | 157 | 0 | 0 |
-| enum | 24 | 46255 | 0 | 0 |
+| enum | 24 | 46254 | 0 | 0 |
 | foreign_key | 16 | 31419 | 0 | 0 |
 | id_format | 10 | 29946 | 0 | 0 |
-| lifecycle | 6 | 29667 | 0 | 0 |
-| primary_key | 13 | 30475 | 0 | 0 |
-| range | 1 | 14445 | 0 | 0 |
-| reconciliation | 10 | 102068 | 0 | 0 |
-| required | 122 | 276103 | 0 | 0 |
-| schema | 13 | 30475 | 0 | 0 |
+| lifecycle | 6 | 29666 | 0 | 0 |
+| primary_key | 13 | 30474 | 0 | 0 |
+| range | 16 | 58623 | 0 | 0 |
+| reconciliation | 17 | 102648 | 0 | 0 |
+| required | 122 | 276097 | 0 | 0 |
+| schema | 13 | 30474 | 0 | 0 |
 
 ## 2. After labelled anomaly injection
 
@@ -154,15 +154,15 @@ Run `python -m src.reproduce --scale starter` (or `make reproduce`) - it execute
 | `fk:lead_time_observation(supplier_id)->supplier` | foreign_key | 480 | 0 |
 | `fk:lead_time_observation(sku_id)->sku` | foreign_key | 480 | 0 |
 | `fk:lead_time_observation(store_id,sku_id)->store_sku` | foreign_key | 480 | 0 |
-| `schema.columns_present:status_event` | schema | 437 | 0 |
-| `required:status_event.event_id` | required | 437 | 0 |
-| `required:status_event.entity_type` | required | 437 | 0 |
-| `enum:status_event.entity_type` | enum | 437 | 0 |
-| `required:status_event.entity_id` | required | 437 | 0 |
-| `required:status_event.new_status` | required | 437 | 0 |
-| `required:status_event.event_date` | required | 437 | 0 |
-| `required:status_event.reason` | required | 437 | 0 |
-| `pk_unique:status_event` | primary_key | 437 | 0 |
+| `schema.columns_present:status_event` | schema | 436 | 0 |
+| `required:status_event.event_id` | required | 436 | 0 |
+| `required:status_event.entity_type` | required | 436 | 0 |
+| `enum:status_event.entity_type` | enum | 436 | 0 |
+| `required:status_event.entity_id` | required | 436 | 0 |
+| `required:status_event.new_status` | required | 436 | 0 |
+| `required:status_event.event_date` | required | 436 | 0 |
+| `required:status_event.reason` | required | 436 | 0 |
+| `pk_unique:status_event` | primary_key | 436 | 0 |
 | `schema.columns_present:forecast` | schema | 123 | 0 |
 | `required:forecast.forecast_id` | required | 123 | 0 |
 | `required:forecast.store_id` | required | 123 | 0 |
@@ -250,7 +250,7 @@ Run `python -m src.reproduce --scale starter` (or `make reproduce`) - it execute
 | `date_order:reorder_policy.cutoff<effective_from` | date_order | 236 | 0 |
 | `lifecycle.one_active_policy_per_store_sku` | lifecycle | 236 | 0 |
 | `lifecycle.primary_supplier_no_overlap` | lifecycle | 54 | 0 |
-| `lifecycle.status_event_transitions_legal` | lifecycle | 437 | 0 |
+| `lifecycle.status_event_transitions_legal` | lifecycle | 436 | 0 |
 | `lifecycle.sku_status_matches_last_event` | lifecycle | 50 | 0 |
 | `reconcile.sales_and_inventory_same_grain` | reconciliation | 14445 | 0 |
 | `reconcile.on_hand=start+receipts-sold` | reconciliation | 14445 | 0 |
@@ -264,6 +264,29 @@ Run `python -m src.reproduce --scale starter` (or `make reproduce`) - it execute
 | `reconcile.lead_time_days=receipt-order` | reconciliation | 480 | 0 |
 | `reconcile.forecast_bounds` | reconciliation | 123 | 0 |
 | `reconcile.forecast_id_matches_keys` | id_format | 123 | 0 |
+| `reconcile.order_value=qty*unit_cost` | reconciliation | 34 | 0 |
+| `range.recommendation_non_negative` | range | 34 | 0 |
+| `reconcile.policy_id_points_to_same_store_sku` | reconciliation | 20 | 0 |
+| `reconcile.forecast_id_points_to_same_store_sku` | reconciliation | 20 | 0 |
+| `reconcile.inventory_position=last_snapshot` | reconciliation | 20 | 0 |
+| `business.reorder_trigger_ip<=rop` | business_rule | 14 | 0 |
+| `reconcile.raw_qty=max(0,order_up_to-ip)` | reconciliation | 14 | 0 |
+| `reconcile.policy_rop=d*L+ss` | reconciliation | 236 | 0 |
+| `reconcile.policy_order_up_to=d*(L+R)+ss` | reconciliation | 236 | 0 |
+| `range:sku.unit_cost` | range | 50 | 0 |
+| `range:sku.unit_price` | range | 50 | 0 |
+| `range:sku.volume_per_unit` | range | 50 | 0 |
+| `range:store.capacity_units` | range | 5 | 0 |
+| `range:supplier_sku.pack_size` | range | 59 | 0 |
+| `range:supplier_sku.moq` | range | 59 | 0 |
+| `range:supplier_sku.unit_cost` | range | 59 | 0 |
+| `range:supplier_sku.mean_lead_time_days` | range | 59 | 0 |
+| `range:sales_history.units_sold` | range | 14445 | 0 |
+| `range:sales_history.promo_depth` | range | 14445 | 0 |
+| `range:sales_history.price` | range | 14445 | 0 |
+| `range:reorder_policy.service_level` | range | 236 | 0 |
+| `range:forecast.forecast_units` | range | 123 | 0 |
+| `range:supplier_sku.moq_multiple_of_pack_after_rounding` | range | 59 | 0 |
 | `duplicate.purchase_recommendation_per_store_sku_period` | duplicate | 34 | 0 |
 | `duplicate.forecast_per_store_sku_month` | duplicate | 123 | 0 |
 | `business.moq_respected` | business_rule | 14 | 0 |

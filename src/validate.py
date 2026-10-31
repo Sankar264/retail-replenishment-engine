@@ -210,6 +210,70 @@ def run_validation(tables: dict, aux: dict, cfg: dict) -> dict:
     ck.add("reconcile.forecast_id_matches_keys", "id_format", "forecast", len(fc),
            bad_ids=fc["forecast_id"][fc["forecast_id"].astype(str) != pd.Series(ids.forecast_ids(_str(fc["store_id"]), _str(fc["sku_id"]), cfg["forecast_month"]), index=fc.index)].tolist())
 
+    # -------- recommendation arithmetic & lineage (C02): every derived field is re-computed from its sources ------
+    po = tables["purchase_recommendation"]
+    ov = po["recommended_qty"].to_numpy() * po["unit_cost"].fillna(0).to_numpy()
+    ck.add("reconcile.order_value=qty*unit_cost", "reconciliation", "purchase_recommendation", len(po),
+           bad_ids=po["po_id"][np.abs(po["order_value"].to_numpy() - np.round(ov, 2)) > 0.011].tolist())
+    ck.add("range.recommendation_non_negative", "range", "purchase_recommendation", len(po),
+           bad_ids=po["po_id"][((po[["raw_qty", "recommended_qty", "order_value"]].to_numpy() < 0).any(1))].tolist())
+    # policy / forecast link must point at the SAME store-sku as the recommendation (FK existence alone is not enough)
+    pol_k = pol.set_index("policy_id")[["store_id", "sku_id"]].astype(str)
+    fc_k = fc.set_index("forecast_id")[["store_id", "sku_id"]].astype(str)
+    for col, ref in (("policy_id", pol_k), ("forecast_id", fc_k)):
+        sub = po[po[col].notna()]
+        got = ref.reindex(sub[col].astype(str))
+        wrong = (got["store_id"].to_numpy() != sub["store_id"].astype(str).to_numpy()) | (got["sku_id"].to_numpy() != sub["sku_id"].astype(str).to_numpy())
+        ck.add(f"reconcile.{col}_points_to_same_store_sku", "reconciliation", "purchase_recommendation", len(sub), bad_ids=sub["po_id"][wrong].tolist())
+    # inventory position on the recommendation == last-day snapshot (on_hand + on_order + in_transit)
+    last_inv = inv[np.asarray(inv["date"]).astype(str) == aux["end"]]
+    ip = pd.Series((last_inv["on_hand"] + last_inv["on_order"] + last_inv["in_transit"]).to_numpy(),
+                   index=pd.MultiIndex.from_arrays([np.asarray(last_inv["store_id"]).astype(str), np.asarray(last_inv["sku_id"]).astype(str)]))
+    withpos = po[po["inventory_position"].notna()]
+    exp_ip = ip.reindex(pd.MultiIndex.from_arrays([withpos["store_id"].astype(str), withpos["sku_id"].astype(str)])).to_numpy()
+    ck.add("reconcile.inventory_position=last_snapshot", "reconciliation", "purchase_recommendation", len(withpos),
+           bad_ids=withpos["po_id"][(withpos["inventory_position"].to_numpy() != exp_ip)].tolist())
+    ordr = po[po["reason_code"].isin(["REORDER_POINT", "CAPACITY_REDUCED"]) & (po["status"] != "BLOCKED")]
+    ck.add("business.reorder_trigger_ip<=rop", "business_rule", "purchase_recommendation", len(ordr),
+           bad_ids=ordr["po_id"][(ordr["inventory_position"] > ordr["reorder_point"]).to_numpy()].tolist())
+    raw_exp = np.round(np.maximum(0.0, ordr["order_up_to"].to_numpy() - ordr["inventory_position"].to_numpy()), 2)
+    ck.add("reconcile.raw_qty=max(0,order_up_to-ip)", "reconciliation", "purchase_recommendation", len(ordr),
+           bad_ids=ordr["po_id"][np.abs(ordr["raw_qty"].to_numpy() - raw_exp) > 0.011].tolist())
+    # policy arithmetic: ROP = d*L + SS ; S = d*(L+R) + SS (policy columns are rounded, so a documented tolerance applies)
+    d_, L_, R_, SS_ = (pol[c].to_numpy().astype(float) for c in ("daily_demand_est", "mean_lead_time_days", "review_period_days", "safety_stock"))
+    tol = 0.02 + 1e-3 * (d_ + L_ + R_)
+    ck.add("reconcile.policy_rop=d*L+ss", "reconciliation", "reorder_policy", len(pol),
+           bad_ids=pol["policy_id"][np.abs(pol["reorder_point"].to_numpy() - (d_ * L_ + SS_)) > tol].tolist())
+    ck.add("reconcile.policy_order_up_to=d*(L+R)+ss", "reconciliation", "reorder_policy", len(pol),
+           bad_ids=pol["policy_id"][np.abs(pol["order_up_to"].to_numpy() - (d_ * (L_ + R_) + SS_)) > tol].tolist())
+
+    # -------- type / range checks from the data dictionary (C07) --------------------------------------------------
+    def _bad_range(df, col, lo=None, hi=None, strict_lo=False):
+        v = pd.to_numeric(df[col], errors="coerce").to_numpy(dtype=float)
+        bad = ~np.isfinite(v)
+        if lo is not None:
+            bad |= (v <= lo) if strict_lo else (v < lo)
+        if hi is not None:
+            bad |= v > hi
+        return np.nonzero(bad)[0]
+    for tname, col, lo, hi, strict in [("sku", "unit_cost", 0, None, True), ("sku", "unit_price", 0, None, True), ("sku", "volume_per_unit", 0, None, True),
+                                       ("store", "capacity_units", 0, None, True), ("supplier_sku", "pack_size", 1, None, False),
+                                       ("supplier_sku", "moq", 1, None, False), ("supplier_sku", "unit_cost", 0, None, True),
+                                       ("supplier_sku", "mean_lead_time_days", 0, None, True), ("sales_history", "units_sold", 0, None, False),
+                                       ("sales_history", "promo_depth", 0, 0.5, False), ("sales_history", "price", 0, None, True),
+                                       ("reorder_policy", "service_level", 0.5, 0.999, False), ("forecast", "forecast_units", 0, None, False)]:
+        ck.add(f"range:{tname}.{col}", "range", tname, len(tables[tname]), bad_idx=_bad_range(tables[tname], col, lo, hi, strict))
+    for tname in schema.ORDER:
+        df = tables[tname]
+        for c in schema.T[tname]["cols"]:
+            if c["type"] == "text" and c["required"] and c["name"] in df.columns and tname not in ("sales_history", "inventory_snapshot"):
+                blank = df[c["name"]].astype(str).str.strip().eq("") & df[c["name"]].notna()
+                if blank.any():
+                    ck.add(f"required_not_blank:{tname}.{c['name']}", "required", tname, len(df), bad_idx=np.nonzero(blank.to_numpy())[0])
+    sm = tables["supplier_sku"]
+    ck.add("range:supplier_sku.moq_multiple_of_pack_after_rounding", "range", "supplier_sku", len(sm),
+           bad_idx=np.nonzero((sm["moq"].to_numpy() < sm["pack_size"].to_numpy()).astype(bool))[0])
+
     # -------- duplicates -------------------------------------------------------------------------------------
     po = tables["purchase_recommendation"]
     ck.add("duplicate.purchase_recommendation_per_store_sku_period", "duplicate", "purchase_recommendation", len(po),

@@ -20,7 +20,7 @@ from . import ids
 from .forecasting import Mats, forecast
 
 REASONS = ["REORDER_POINT", "CAPACITY_REDUCED", "CAPACITY", "MOQ_CONFLICT", "DISCONTINUED_SKU",
-           "NOT_YET_LAUNCHED", "NO_VALID_SUPPLIER", "INVALID_LEAD_TIME"]
+           "NOT_YET_LAUNCHED", "NO_VALID_SUPPLIER", "INVALID_LEAD_TIME", "INVALID_SUPPLIER_TERMS"]
 CREATED_AT_SUFFIX = "T06:00:00Z"
 
 
@@ -34,7 +34,9 @@ def order_quantity(raw_qty: float, pack: int, moq: int, headroom_units: float) -
     Order of operations matters: pack round-up can exceed capacity and a capacity cap can break pack/MOQ, so the
     conflict is resolved explicitly and surfaced with a reason code instead of returning an illegal number.
     """
-    pack = max(int(pack), 1)
+    if int(pack) < 1 or int(moq) < 0:
+        raise ValueError(f"invalid supplier terms: pack_size={pack}, moq={moq} (validate master data before ordering)")
+    pack = int(pack)
     moq_r = int(math.ceil(round(moq / pack, 9))) * pack
     if raw_qty <= 0:
         return 0, "NO_ACTION", "REORDER_POINT"
@@ -47,14 +49,30 @@ def order_quantity(raw_qty: float, pack: int, moq: int, headroom_units: float) -
     return q3, "DRAFT", ("CAPACITY_REDUCED" if q3 < q2 else "REORDER_POINT")
 
 
+def reorder_needed(inventory_position: float, reorder_point: float) -> bool:
+    """Documented trigger: order when IP <= ROP (the boundary IP == ROP DOES trigger an order)."""
+    return inventory_position <= reorder_point
+
+
 def lead_time_stats(lt_obs: pd.DataFrame, cutoff_date: str) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Per (supplier, sku) lead-time mean/sd from VALID observations received on/before cutoff.
-    Negative or inconsistent observations are excluded and returned for the exception log."""
+
+    An observation is valid only if: both dates parse as ISO dates, lead_time_days is finite and >= 0, and
+    lead_time_days == receipt_date - order_date (calendar days). Zero-day lead time is ALLOWED here; the
+    recommendation step blocks pairs whose resulting mean lead time is not > 0 (INVALID_LEAD_TIME).
+    Invalid rows never reach the aggregation and are returned for the exception log.
+    """
     df = lt_obs[["lt_obs_id", "supplier_id", "sku_id", "order_date", "receipt_date", "lead_time_days"]].copy()
     for col in ("supplier_id", "sku_id", "order_date", "receipt_date"):
         df[col] = np.asarray(df[col]).astype(str)
-    df = df[df["receipt_date"] <= cutoff_date]
-    bad = df["lead_time_days"].isna() | (df["lead_time_days"] < 0) | (df["receipt_date"] < df["order_date"])
+    od = pd.to_datetime(df["order_date"], format="%Y-%m-%d", errors="coerce")
+    rd = pd.to_datetime(df["receipt_date"], format="%Y-%m-%d", errors="coerce")
+    cutoff = pd.Timestamp(cutoff_date)
+    df = df[~(rd.notna() & (rd > cutoff))]            # availability: not yet received at the cutoff -> unknown, not "bad"
+    od, rd = od.loc[df.index], rd.loc[df.index]
+    ltd = pd.to_numeric(df["lead_time_days"], errors="coerce").astype(float)
+    dur = (rd - od).dt.days.astype(float)
+    bad = od.isna() | rd.isna() | ~np.isfinite(ltd) | (ltd < 0) | (dur < 0) | (ltd != dur)
     good = df[~bad]
     st = good.groupby(["supplier_id", "sku_id"])["lead_time_days"].agg(["count", "mean", "std"]).reset_index()
     st.columns = ["supplier_id", "sku_id", "n_obs", "lt_mean", "lt_sd"]
@@ -191,6 +209,10 @@ def build_recommendations(m: Mats, tables: dict, aux: dict, cfg: dict, fc_table:
             continue
         srow = sup.loc[sku_id]
         base.update(supplier_id=srow["supplier_id"], pack_size=int(srow["pack_size"]), moq=int(srow["moq"]), unit_cost=float(srow["unit_cost"]))
+        if base["pack_size"] < 1 or base["moq"] < 0 or not base["unit_cost"] > 0:
+            base.update(reason_code="INVALID_SUPPLIER_TERMS", status="BLOCKED")
+            recs.append(base)
+            continue
         if r not in cur.index or r not in fct.index:
             no_action += 1
             continue
@@ -202,7 +224,7 @@ def build_recommendations(m: Mats, tables: dict, aux: dict, cfg: dict, fc_table:
             base.update(reason_code="INVALID_LEAD_TIME", status="BLOCKED")
             recs.append(base)
             continue
-        if pos_last[r] > p["reorder_point"]:
+        if not reorder_needed(pos_last[r], p["reorder_point"]):
             no_action += 1
             continue
         raw = round(max(0.0, float(p["order_up_to"]) - float(pos_last[r])), 2)
@@ -241,16 +263,19 @@ def build_recommendations(m: Mats, tables: dict, aux: dict, cfg: dict, fc_table:
     exc_df = pd.DataFrame(exc, columns=["exception_code", "entity_type", "entity_id", "store_id", "sku_id", "reason_code", "detail", "severity"])
     exc_df.insert(0, "exception_id", [ids.exception_id(i + 1) for i in range(len(exc_df))])
 
-    # PO status events (history is appended, never overwritten): ops manager approves/cancels some drafts
-    from .util import rng_for
-    rr = rng_for(int(cfg["seed"]), "po_events")
+    # PO status events (history is appended, never overwritten). Outcomes follow a DOCUMENTED operator policy, not a random draw:
+    #   APPROVED  : reason REORDER_POINT, normal-confidence forecast and order_value <= auto_approve_value_limit
+    #   CANCELLED : capacity cut the order below cancel_if_capacity_cut_below_share of the raw need (not worth shipping)
+    #   otherwise stays DRAFT (waits for manual review: high value, low confidence, or a smaller capacity cut)
+    rcfg = cfg["replenishment"]
+    limit = float(rcfg.get("auto_approve_value_limit", 1000.0))
+    cut_share = float(rcfg.get("cancel_if_capacity_cut_below_share", 0.5))
     ev = []
     for _, r in po[po["status"] == "DRAFT"].iterrows():
-        u = rr.random()
-        if u < 0.65:
-            ev.append(("PURCHASE_RECOMMENDATION", r["po_id"], "DRAFT", "APPROVED", (date.fromisoformat(as_of) + timedelta(days=1)).isoformat(), "OPS_APPROVAL"))
-        elif u < 0.70:
-            ev.append(("PURCHASE_RECOMMENDATION", r["po_id"], "DRAFT", "CANCELLED", (date.fromisoformat(as_of) + timedelta(days=2)).isoformat(), "OPS_CANCELLED"))
+        if r["reason_code"] == "CAPACITY_REDUCED" and r["raw_qty"] > 0 and r["recommended_qty"] < cut_share * r["raw_qty"]:
+            ev.append(("PURCHASE_RECOMMENDATION", r["po_id"], "DRAFT", "CANCELLED", (date.fromisoformat(as_of) + timedelta(days=2)).isoformat(), "CAPACITY_CUT_BELOW_SHARE"))
+        elif r["reason_code"] == "REORDER_POINT" and r["confidence"] != "LOW_CONFIDENCE" and r["order_value"] <= limit:
+            ev.append(("PURCHASE_RECOMMENDATION", r["po_id"], "DRAFT", "APPROVED", (date.fromisoformat(as_of) + timedelta(days=1)).isoformat(), "AUTO_APPROVE_RULE"))
     ev_df = pd.DataFrame(ev, columns=["entity_type", "entity_id", "old_status", "new_status", "event_date", "reason"])
 
     nb = po[po["status"] != "BLOCKED"]

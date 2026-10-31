@@ -56,6 +56,10 @@ def inject(tables: dict, censored: pd.DataFrame, aux: dict, cfg: dict) -> pd.Dat
         orig = qty[sel].copy()
         qty[sel] = orig - 1
         po["recommended_qty"] = qty
+        # only the pack rule is broken: order_value stays = qty * unit_cost (C02)
+        val_pk = po["order_value"].to_numpy().copy()
+        val_pk[sel] = np.round(qty[sel] * po["unit_cost"].to_numpy()[sel].astype(float), 2)
+        po["order_value"] = val_pk
         for j, o in zip(sel, orig):
             r = po.iloc[j]
             rec("PACK_SIZE_VIOLATION", "PURCHASE_RECOMMENDATION", r["po_id"], r["store_id"], r["sku_id"], "recommended_qty", int(o - 1), int(o),
@@ -74,6 +78,15 @@ def inject(tables: dict, censored: pd.DataFrame, aux: dict, cfg: dict) -> pd.Dat
             qty[j], stat[j] = q, "DRAFT"
             val[j] = round(q * float(po["unit_cost"].iat[j]), 2)
         po["recommended_qty"], po["status"], po["order_value"] = qty, stat, val
+        # audit trail (C03): a DRAFT always has a creation event; the BLOCKED_RECOMMENDATION exception rows are no longer true
+        flipped_ids = set(po["po_id"].iloc[sel].astype(str))
+        ev_old = tables["status_event"]
+        ev_new = pd.DataFrame([("PURCHASE_RECOMMENDATION", pid, None, "DRAFT", cfg["as_of_date"], "RECOMMENDATION_CREATED_INJECTED") for pid in sorted(flipped_ids)],
+                              columns=["entity_type", "entity_id", "old_status", "new_status", "event_date", "reason"])
+        ev_new.insert(0, "event_id", [ids.event_id(len(ev_old) + i + 1) for i in range(len(ev_new))])
+        tables["status_event"] = pd.concat([ev_old, ev_new], ignore_index=True)
+        exl = tables["exception_log"]
+        tables["exception_log"] = exl[~exl["entity_id"].astype(str).isin(flipped_ids)].reset_index(drop=True)
         for j in sel:
             r = po.iloc[j]
             rec("DISCONTINUED_SKU_RECOMMENDED", "PURCHASE_RECOMMENDATION", r["po_id"], r["store_id"], r["sku_id"], "status", "DRAFT", "BLOCKED",

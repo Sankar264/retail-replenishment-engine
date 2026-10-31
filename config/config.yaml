@@ -25,3 +25,5 @@ replenishment:
   review_period_days: 7
   fast_review_period_days: 3   # for pairs forecast >= 2 units/day
   service_levels: {SMOOTH: 0.95, ERRATIC: 0.95, INTERMITTENT: 0.90, LUMPY: 0.90, NEW: 0.90}
+  auto_approve_value_limit: 1000.0
+  cancel_if_capacity_cut_below_share: 0.5

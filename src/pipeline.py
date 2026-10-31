@@ -34,7 +34,54 @@ SOURCE_MANIFEST = {
 def _dump(path: Path, obj) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(obj, indent=2, sort_keys=True, default=lambda o: o.item() if hasattr(o, "item") else str(o)), encoding="utf-8")
+class ValidationGateError(RuntimeError):
+    """Raised when the clean baseline or the labelled-anomaly run breaks its validation contract."""
 
+
+def _ledger_append(final_dir: Path, rec: dict) -> None:
+    final_dir.mkdir(parents=True, exist_ok=True)
+    with open(final_dir / "run_ledger.jsonl", "a", encoding="utf-8") as fh:
+        fh.write(json.dumps(rec, sort_keys=True) + "\n")
+
+
+def _now() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+def _gate_baseline(base: dict) -> None:
+    sm = base["summary"]
+    det = {k: v for k, v in sm["anomaly_detector_violations"].items() if v}
+    if sm["structural_violations"] or det:
+        raise ValidationGateError(f"clean baseline violates its contract: failed checks={sm['failed_structural_checks']}, unexpected detector findings={det}")
+
+
+def _gate_injected(inj: dict, scores: dict) -> None:
+    sm = inj["summary"]
+    if sm["structural_violations"]:
+        raise ValidationGateError(f"injection caused UNPLANNED structural failures: {sm['failed_structural_checks']}")
+    off = {k: v for k, v in scores.items() if v["false_positives"] or v["false_negatives"] or v["injected"] == 0}
+    if off:
+        raise ValidationGateError(f"detector findings do not reconcile to ground-truth labels: {off}")
+
+
+def _publish(stage: Path, final_dir: Path, attempt_id: str) -> None:
+    final_dir.mkdir(parents=True, exist_ok=True)
+    keep = {"_history", "failed_attempts", "run_ledger.jsonl"}
+    existing = [x for x in final_dir.iterdir() if x.name not in keep]
+    if existing:
+        prev = "previous"
+        if (final_dir / "run_attempt.json").exists():
+            try:
+                prev = json.loads((final_dir / "run_attempt.json").read_text())["attempt_id"]
+            except Exception:
+                pass
+        arch = final_dir / "_history" / prev
+        arch.mkdir(parents=True, exist_ok=True)
+        for x in existing:
+            shutil.move(str(x), str(arch / x.name))
+    for x in stage.iterdir():
+        shutil.move(str(x), str(final_dir / x.name))
+    shutil.rmtree(stage, ignore_errors=True)
 
 def data_profile(tables: dict, m: forecasting.Mats, truth: dict, cfg: dict) -> dict:
     valid, active = m.valid, m.active

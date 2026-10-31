@@ -3822,7 +3822,7 @@
   "old_status": "DRAFT",
   "new_status": "APPROVED",
   "event_date": "2026-01-02",
-  "reason": "OPS_APPROVAL"
+  "reason": "AUTO_APPROVE_RULE"
  },
  {
   "event_id": "EVT-0000426",
@@ -3831,25 +3831,25 @@
   "old_status": "DRAFT",
   "new_status": "APPROVED",
   "event_date": "2026-01-02",
-  "reason": "OPS_APPROVAL"
+  "reason": "AUTO_APPROVE_RULE"
  },
  {
   "event_id": "EVT-0000427",
   "entity_type": "PURCHASE_RECOMMENDATION",
-  "entity_id": "PO-2026-000007",
+  "entity_id": "PO-2026-000006",
   "old_status": "DRAFT",
-  "new_status": "CANCELLED",
-  "event_date": "2026-01-03",
-  "reason": "OPS_CANCELLED"
+  "new_status": "APPROVED",
+  "event_date": "2026-01-02",
+  "reason": "AUTO_APPROVE_RULE"
  },
  {
   "event_id": "EVT-0000428",
   "entity_type": "PURCHASE_RECOMMENDATION",
-  "entity_id": "PO-2026-000009",
+  "entity_id": "PO-2026-000007",
   "old_status": "DRAFT",
-  "new_status": "CANCELLED",
-  "event_date": "2026-01-03",
-  "reason": "OPS_CANCELLED"
+  "new_status": "APPROVED",
+  "event_date": "2026-01-02",
+  "reason": "AUTO_APPROVE_RULE"
  },
  {
   "event_id": "EVT-0000429",
@@ -3858,7 +3858,7 @@
   "old_status": "DRAFT",
   "new_status": "APPROVED",
   "event_date": "2026-01-02",
-  "reason": "OPS_APPROVAL"
+  "reason": "AUTO_APPROVE_RULE"
  },
  {
   "event_id": "EVT-0000430",
@@ -3867,69 +3867,105 @@
   "old_status": "DRAFT",
   "new_status": "APPROVED",
   "event_date": "2026-01-02",
-  "reason": "OPS_APPROVAL"
+  "reason": "AUTO_APPROVE_RULE"
  },
  {
   "event_id": "EVT-0000431",
   "entity_type": "PURCHASE_RECOMMENDATION",
-  "entity_id": "PO-2026-000020",
+  "entity_id": "PO-2026-000025",
   "old_status": "DRAFT",
   "new_status": "APPROVED",
   "event_date": "2026-01-02",
-  "reason": "OPS_APPROVAL"
+  "reason": "AUTO_APPROVE_RULE"
  },
  {
   "event_id": "EVT-0000432",
-  "entity_type": "PURCHASE_RECOMMENDATION",
-  "entity_id": "PO-2026-000025",
-  "old_status": "DRAFT",
-  "new_status": "CANCELLED",
-  "event_date": "2026-01-03",
-  "reason": "OPS_CANCELLED"
- },
- {
-  "event_id": "EVT-0000433",
   "entity_type": "PURCHASE_RECOMMENDATION",
   "entity_id": "PO-2026-000027",
   "old_status": "DRAFT",
   "new_status": "APPROVED",
   "event_date": "2026-01-02",
-  "reason": "OPS_APPROVAL"
+  "reason": "AUTO_APPROVE_RULE"
  },
  {
-  "event_id": "EVT-0000434",
+  "event_id": "EVT-0000433",
   "entity_type": "PURCHASE_RECOMMENDATION",
   "entity_id": "PO-2026-000031",
   "old_status": "DRAFT",
-  "new_status": "CANCELLED",
-  "event_date": "2026-01-03",
-  "reason": "OPS_CANCELLED"
+  "new_status": "APPROVED",
+  "event_date": "2026-01-02",
+  "reason": "AUTO_APPROVE_RULE"
  },
  {
-  "event_id": "EVT-0000435",
+  "event_id": "EVT-0000434",
   "entity_type": "PURCHASE_RECOMMENDATION",
   "entity_id": "PO-2026-000032",
   "old_status": "DRAFT",
   "new_status": "APPROVED",
   "event_date": "2026-01-02",
-  "reason": "OPS_APPROVAL"
+  "reason": "AUTO_APPROVE_RULE"
  },
  {
-  "event_id": "EVT-0000436",
+  "event_id": "EVT-0000435",
   "entity_type": "PURCHASE_RECOMMENDATION",
   "entity_id": "PO-2026-000033",
   "old_status": "DRAFT",
   "new_status": "APPROVED",
   "event_date": "2026-01-02",
-  "reason": "OPS_APPROVAL"
+  "reason": "AUTO_APPROVE_RULE"
  },
  {
-  "event_id": "EVT-0000437",
+  "event_id": "EVT-0000436",
   "entity_type": "PURCHASE_RECOMMENDATION",
   "entity_id": "PO-2026-000034",
   "old_status": "DRAFT",
   "new_status": "APPROVED",
   "event_date": "2026-01-02",
-  "reason": "OPS_APPROVAL"
+  "reason": "AUTO_APPROVE_RULE"
+ },
+ {
+  "event_id": "EVT-0000437",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000001",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED_INJECTED"
+ },
+ {
+  "event_id": "EVT-0000438",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000004",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED_INJECTED"
+ },
+ {
+  "event_id": "EVT-0000439",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000013",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED_INJECTED"
+ },
+ {
+  "event_id": "EVT-0000440",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000021",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED_INJECTED"
+ },
+ {
+  "event_id": "EVT-0000441",
+  "entity_type": "PURCHASE_RECOMMENDATION",
+  "entity_id": "PO-2026-000030",
+  "old_status": null,
+  "new_status": "DRAFT",
+  "event_date": "2026-01-01",
+  "reason": "RECOMMENDATION_CREATED_INJECTED"
  }
 ]

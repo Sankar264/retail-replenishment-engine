@@ -1,16 +1,5 @@
 [
  {
-  "exception_id": "EXC-000001",
-  "exception_code": "BLOCKED_RECOMMENDATION",
-  "entity_type": "PURCHASE_RECOMMENDATION",
-  "entity_id": "PO-2026-000001",
-  "store_id": "STORE-000001",
-  "sku_id": "SKU-000015",
-  "reason_code": "DISCONTINUED_SKU",
-  "detail": "blocked: DISCONTINUED_SKU",
-  "severity": "MEDIUM"
- },
- {
   "exception_id": "EXC-000002",
   "exception_code": "BLOCKED_RECOMMENDATION",
   "entity_type": "PURCHASE_RECOMMENDATION",
@@ -19,17 +8,6 @@
   "sku_id": "SKU-000017",
   "reason_code": "NOT_YET_LAUNCHED",
   "detail": "blocked: NOT_YET_LAUNCHED",
-  "severity": "MEDIUM"
- },
- {
-  "exception_id": "EXC-000003",
-  "exception_code": "BLOCKED_RECOMMENDATION",
-  "entity_type": "PURCHASE_RECOMMENDATION",
-  "entity_id": "PO-2026-000004",
-  "store_id": "STORE-000001",
-  "sku_id": "SKU-000027",
-  "reason_code": "DISCONTINUED_SKU",
-  "detail": "blocked: DISCONTINUED_SKU",
   "severity": "MEDIUM"
  },
  {
@@ -63,17 +41,6 @@
   "sku_id": "SKU-000017",
   "reason_code": "NOT_YET_LAUNCHED",
   "detail": "blocked: NOT_YET_LAUNCHED",
-  "severity": "MEDIUM"
- },
- {
-  "exception_id": "EXC-000007",
-  "exception_code": "BLOCKED_RECOMMENDATION",
-  "entity_type": "PURCHASE_RECOMMENDATION",
-  "entity_id": "PO-2026-000013",
-  "store_id": "STORE-000003",
-  "sku_id": "SKU-000027",
-  "reason_code": "DISCONTINUED_SKU",
-  "detail": "blocked: DISCONTINUED_SKU",
   "severity": "MEDIUM"
  },
  {
@@ -129,17 +96,6 @@
   "sku_id": "SKU-000017",
   "reason_code": "NOT_YET_LAUNCHED",
   "detail": "blocked: NOT_YET_LAUNCHED",
-  "severity": "MEDIUM"
- },
- {
-  "exception_id": "EXC-000013",
-  "exception_code": "BLOCKED_RECOMMENDATION",
-  "entity_type": "PURCHASE_RECOMMENDATION",
-  "entity_id": "PO-2026-000021",
-  "store_id": "STORE-000004",
-  "sku_id": "SKU-000027",
-  "reason_code": "DISCONTINUED_SKU",
-  "detail": "blocked: DISCONTINUED_SKU",
   "severity": "MEDIUM"
  },
  {
@@ -206,17 +162,6 @@
   "sku_id": "SKU-000017",
   "reason_code": "NOT_YET_LAUNCHED",
   "detail": "blocked: NOT_YET_LAUNCHED",
-  "severity": "MEDIUM"
- },
- {
-  "exception_id": "EXC-000020",
-  "exception_code": "BLOCKED_RECOMMENDATION",
-  "entity_type": "PURCHASE_RECOMMENDATION",
-  "entity_id": "PO-2026-000030",
-  "store_id": "STORE-000005",
-  "sku_id": "SKU-000027",
-  "reason_code": "DISCONTINUED_SKU",
-  "detail": "blocked: DISCONTINUED_SKU",
   "severity": "MEDIUM"
  },
  {

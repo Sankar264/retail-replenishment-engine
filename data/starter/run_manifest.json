@@ -1,7 +1,7 @@
 {
   "environment": {
-    "numpy": "2.5.1",
-    "pandas": "3.0.5",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
     "python": "3.13.13"
   },
   "generator_command": "python -m src.pipeline --scale starter --seed 20261022 --out data/starter",
@@ -29,6 +29,8 @@
     "start_date": "2025-09-03"
   },
   "replenishment": {
+    "auto_approve_value_limit": 1000.0,
+    "cancel_if_capacity_cut_below_share": 0.5,
     "fast_review_period_days": 3,
     "review_period_days": 7,
     "service_levels": {
@@ -40,7 +42,7 @@
     }
   },
   "row_counts": {
-    "exception_log": 22,
+    "exception_log": 17,
     "forecast": 123,
     "inventory_snapshot": 14445,
     "lead_time_observation": 485,
@@ -48,7 +50,7 @@
     "reorder_policy": 236,
     "sales_history": 14445,
     "sku": 50,
-    "status_event": 437,
+    "status_event": 441,
     "store": 5,
     "store_sku": 134,
     "supplier": 5,

@@ -109,10 +109,18 @@ def export_all(tables: dict, ground_truth: pd.DataFrame, censored: pd.DataFrame,
     return {"row_counts": counts, "sql": sql_info, "ground_truth_rows": int(len(ground_truth)), "censored_demand_rows": int(len(censored))}
 
 
+# Operational files differ on every attempt by design (timestamps / random attempt id); everything else is hashed,
+# INCLUDING metrics/ and reports/ (they are deterministic functions of the seed).
+CHECKSUM_EXCLUDED = {"checksums.json": "the checksum file itself", "run_attempt.json": "attempt id + wall-clock times",
+                     "run_ledger.jsonl": "append-only attempt ledger", "_history": "archived earlier attempts",
+                     "failed_attempts": "diagnostics of failed attempts"}
+
+
 def checksum_tree(out_dir: Path) -> dict:
     out_dir = Path(out_dir)
     res = {}
     for p in sorted(out_dir.rglob("*")):
-        if p.is_file() and p.name not in ("checksums.json",) and "metrics" not in p.parts and "reports" not in p.parts:
-            res[str(p.relative_to(out_dir)).replace("\\", "/")] = sha256_file(p)
+        rel = p.relative_to(out_dir)
+        if p.is_file() and p.name not in CHECKSUM_EXCLUDED and not (set(rel.parts) & set(CHECKSUM_EXCLUDED)):
+            res[str(rel).replace("\\", "/")] = sha256_file(p)
     return res

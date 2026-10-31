@@ -1095,7 +1095,7 @@
       "check": "schema.columns_present:status_event",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 436,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -1105,7 +1105,7 @@
       "check": "required:status_event.event_id",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 436,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -1115,7 +1115,7 @@
       "check": "required:status_event.entity_type",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 436,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -1125,7 +1125,7 @@
       "check": "enum:status_event.entity_type",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 436,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -1135,7 +1135,7 @@
       "check": "required:status_event.entity_id",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 436,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -1145,7 +1145,7 @@
       "check": "required:status_event.new_status",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 436,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -1155,7 +1155,7 @@
       "check": "required:status_event.event_date",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 436,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -1165,7 +1165,7 @@
       "check": "required:status_event.reason",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 436,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -1175,7 +1175,7 @@
       "check": "pk_unique:status_event",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 436,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -2055,7 +2055,7 @@
       "check": "lifecycle.status_event_transitions_legal",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 436,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -2188,6 +2188,236 @@
       "rows_checked": 123,
       "sample": [],
       "table": "forecast",
+      "violations": 0
+    },
+    {
+      "category": "reconciliation",
+      "check": "reconcile.order_value=qty*unit_cost",
+      "note": "",
+      "passed": true,
+      "rows_checked": 34,
+      "sample": [],
+      "table": "purchase_recommendation",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range.recommendation_non_negative",
+      "note": "",
+      "passed": true,
+      "rows_checked": 34,
+      "sample": [],
+      "table": "purchase_recommendation",
+      "violations": 0
+    },
+    {
+      "category": "reconciliation",
+      "check": "reconcile.policy_id_points_to_same_store_sku",
+      "note": "",
+      "passed": true,
+      "rows_checked": 20,
+      "sample": [],
+      "table": "purchase_recommendation",
+      "violations": 0
+    },
+    {
+      "category": "reconciliation",
+      "check": "reconcile.forecast_id_points_to_same_store_sku",
+      "note": "",
+      "passed": true,
+      "rows_checked": 20,
+      "sample": [],
+      "table": "purchase_recommendation",
+      "violations": 0
+    },
+    {
+      "category": "reconciliation",
+      "check": "reconcile.inventory_position=last_snapshot",
+      "note": "",
+      "passed": true,
+      "rows_checked": 20,
+      "sample": [],
+      "table": "purchase_recommendation",
+      "violations": 0
+    },
+    {
+      "category": "business_rule",
+      "check": "business.reorder_trigger_ip<=rop",
+      "note": "",
+      "passed": true,
+      "rows_checked": 14,
+      "sample": [],
+      "table": "purchase_recommendation",
+      "violations": 0
+    },
+    {
+      "category": "reconciliation",
+      "check": "reconcile.raw_qty=max(0,order_up_to-ip)",
+      "note": "",
+      "passed": true,
+      "rows_checked": 14,
+      "sample": [],
+      "table": "purchase_recommendation",
+      "violations": 0
+    },
+    {
+      "category": "reconciliation",
+      "check": "reconcile.policy_rop=d*L+ss",
+      "note": "",
+      "passed": true,
+      "rows_checked": 236,
+      "sample": [],
+      "table": "reorder_policy",
+      "violations": 0
+    },
+    {
+      "category": "reconciliation",
+      "check": "reconcile.policy_order_up_to=d*(L+R)+ss",
+      "note": "",
+      "passed": true,
+      "rows_checked": 236,
+      "sample": [],
+      "table": "reorder_policy",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:sku.unit_cost",
+      "note": "",
+      "passed": true,
+      "rows_checked": 50,
+      "sample": [],
+      "table": "sku",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:sku.unit_price",
+      "note": "",
+      "passed": true,
+      "rows_checked": 50,
+      "sample": [],
+      "table": "sku",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:sku.volume_per_unit",
+      "note": "",
+      "passed": true,
+      "rows_checked": 50,
+      "sample": [],
+      "table": "sku",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:store.capacity_units",
+      "note": "",
+      "passed": true,
+      "rows_checked": 5,
+      "sample": [],
+      "table": "store",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:supplier_sku.pack_size",
+      "note": "",
+      "passed": true,
+      "rows_checked": 59,
+      "sample": [],
+      "table": "supplier_sku",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:supplier_sku.moq",
+      "note": "",
+      "passed": true,
+      "rows_checked": 59,
+      "sample": [],
+      "table": "supplier_sku",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:supplier_sku.unit_cost",
+      "note": "",
+      "passed": true,
+      "rows_checked": 59,
+      "sample": [],
+      "table": "supplier_sku",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:supplier_sku.mean_lead_time_days",
+      "note": "",
+      "passed": true,
+      "rows_checked": 59,
+      "sample": [],
+      "table": "supplier_sku",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:sales_history.units_sold",
+      "note": "",
+      "passed": true,
+      "rows_checked": 14445,
+      "sample": [],
+      "table": "sales_history",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:sales_history.promo_depth",
+      "note": "",
+      "passed": true,
+      "rows_checked": 14445,
+      "sample": [],
+      "table": "sales_history",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:sales_history.price",
+      "note": "",
+      "passed": true,
+      "rows_checked": 14445,
+      "sample": [],
+      "table": "sales_history",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:reorder_policy.service_level",
+      "note": "",
+      "passed": true,
+      "rows_checked": 236,
+      "sample": [],
+      "table": "reorder_policy",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:forecast.forecast_units",
+      "note": "",
+      "passed": true,
+      "rows_checked": 123,
+      "sample": [],
+      "table": "forecast",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:supplier_sku.moq_multiple_of_pack_after_rounding",
+      "note": "",
+      "passed": true,
+      "rows_checked": 59,
+      "sample": [],
+      "table": "supplier_sku",
       "violations": 0
     },
     {
@@ -3397,7 +3627,7 @@
       "check": "schema.columns_present:status_event",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 441,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -3407,7 +3637,7 @@
       "check": "required:status_event.event_id",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 441,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -3417,7 +3647,7 @@
       "check": "required:status_event.entity_type",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 441,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -3427,7 +3657,7 @@
       "check": "enum:status_event.entity_type",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 441,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -3437,7 +3667,7 @@
       "check": "required:status_event.entity_id",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 441,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -3447,7 +3677,7 @@
       "check": "required:status_event.new_status",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 441,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -3457,7 +3687,7 @@
       "check": "required:status_event.event_date",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 441,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -3467,7 +3697,7 @@
       "check": "required:status_event.reason",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 441,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -3477,7 +3707,7 @@
       "check": "pk_unique:status_event",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 441,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -4177,7 +4407,7 @@
       "check": "schema.columns_present:exception_log",
       "note": "",
       "passed": true,
-      "rows_checked": 22,
+      "rows_checked": 17,
       "sample": [],
       "table": "exception_log",
       "violations": 0
@@ -4187,7 +4417,7 @@
       "check": "required:exception_log.exception_id",
       "note": "",
       "passed": true,
-      "rows_checked": 22,
+      "rows_checked": 17,
       "sample": [],
       "table": "exception_log",
       "violations": 0
@@ -4197,7 +4427,7 @@
       "check": "required:exception_log.exception_code",
       "note": "",
       "passed": true,
-      "rows_checked": 22,
+      "rows_checked": 17,
       "sample": [],
       "table": "exception_log",
       "violations": 0
@@ -4207,7 +4437,7 @@
       "check": "required:exception_log.entity_type",
       "note": "",
       "passed": true,
-      "rows_checked": 22,
+      "rows_checked": 17,
       "sample": [],
       "table": "exception_log",
       "violations": 0
@@ -4217,7 +4447,7 @@
       "check": "required:exception_log.entity_id",
       "note": "",
       "passed": true,
-      "rows_checked": 22,
+      "rows_checked": 17,
       "sample": [],
       "table": "exception_log",
       "violations": 0
@@ -4227,7 +4457,7 @@
       "check": "required:exception_log.reason_code",
       "note": "",
       "passed": true,
-      "rows_checked": 22,
+      "rows_checked": 17,
       "sample": [],
       "table": "exception_log",
       "violations": 0
@@ -4237,7 +4467,7 @@
       "check": "required:exception_log.detail",
       "note": "",
       "passed": true,
-      "rows_checked": 22,
+      "rows_checked": 17,
       "sample": [],
       "table": "exception_log",
       "violations": 0
@@ -4247,7 +4477,7 @@
       "check": "required:exception_log.severity",
       "note": "",
       "passed": true,
-      "rows_checked": 22,
+      "rows_checked": 17,
       "sample": [],
       "table": "exception_log",
       "violations": 0
@@ -4257,7 +4487,7 @@
       "check": "enum:exception_log.severity",
       "note": "",
       "passed": true,
-      "rows_checked": 22,
+      "rows_checked": 17,
       "sample": [],
       "table": "exception_log",
       "violations": 0
@@ -4267,7 +4497,7 @@
       "check": "pk_unique:exception_log",
       "note": "",
       "passed": true,
-      "rows_checked": 22,
+      "rows_checked": 17,
       "sample": [],
       "table": "exception_log",
       "violations": 0
@@ -4357,7 +4587,7 @@
       "check": "lifecycle.status_event_transitions_legal",
       "note": "",
       "passed": true,
-      "rows_checked": 437,
+      "rows_checked": 441,
       "sample": [],
       "table": "status_event",
       "violations": 0
@@ -4500,6 +4730,236 @@
       "rows_checked": 123,
       "sample": [],
       "table": "forecast",
+      "violations": 0
+    },
+    {
+      "category": "reconciliation",
+      "check": "reconcile.order_value=qty*unit_cost",
+      "note": "",
+      "passed": true,
+      "rows_checked": 34,
+      "sample": [],
+      "table": "purchase_recommendation",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range.recommendation_non_negative",
+      "note": "",
+      "passed": true,
+      "rows_checked": 34,
+      "sample": [],
+      "table": "purchase_recommendation",
+      "violations": 0
+    },
+    {
+      "category": "reconciliation",
+      "check": "reconcile.policy_id_points_to_same_store_sku",
+      "note": "",
+      "passed": true,
+      "rows_checked": 20,
+      "sample": [],
+      "table": "purchase_recommendation",
+      "violations": 0
+    },
+    {
+      "category": "reconciliation",
+      "check": "reconcile.forecast_id_points_to_same_store_sku",
+      "note": "",
+      "passed": true,
+      "rows_checked": 20,
+      "sample": [],
+      "table": "purchase_recommendation",
+      "violations": 0
+    },
+    {
+      "category": "reconciliation",
+      "check": "reconcile.inventory_position=last_snapshot",
+      "note": "",
+      "passed": true,
+      "rows_checked": 20,
+      "sample": [],
+      "table": "purchase_recommendation",
+      "violations": 0
+    },
+    {
+      "category": "business_rule",
+      "check": "business.reorder_trigger_ip<=rop",
+      "note": "",
+      "passed": true,
+      "rows_checked": 14,
+      "sample": [],
+      "table": "purchase_recommendation",
+      "violations": 0
+    },
+    {
+      "category": "reconciliation",
+      "check": "reconcile.raw_qty=max(0,order_up_to-ip)",
+      "note": "",
+      "passed": true,
+      "rows_checked": 14,
+      "sample": [],
+      "table": "purchase_recommendation",
+      "violations": 0
+    },
+    {
+      "category": "reconciliation",
+      "check": "reconcile.policy_rop=d*L+ss",
+      "note": "",
+      "passed": true,
+      "rows_checked": 236,
+      "sample": [],
+      "table": "reorder_policy",
+      "violations": 0
+    },
+    {
+      "category": "reconciliation",
+      "check": "reconcile.policy_order_up_to=d*(L+R)+ss",
+      "note": "",
+      "passed": true,
+      "rows_checked": 236,
+      "sample": [],
+      "table": "reorder_policy",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:sku.unit_cost",
+      "note": "",
+      "passed": true,
+      "rows_checked": 50,
+      "sample": [],
+      "table": "sku",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:sku.unit_price",
+      "note": "",
+      "passed": true,
+      "rows_checked": 50,
+      "sample": [],
+      "table": "sku",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:sku.volume_per_unit",
+      "note": "",
+      "passed": true,
+      "rows_checked": 50,
+      "sample": [],
+      "table": "sku",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:store.capacity_units",
+      "note": "",
+      "passed": true,
+      "rows_checked": 5,
+      "sample": [],
+      "table": "store",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:supplier_sku.pack_size",
+      "note": "",
+      "passed": true,
+      "rows_checked": 59,
+      "sample": [],
+      "table": "supplier_sku",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:supplier_sku.moq",
+      "note": "",
+      "passed": true,
+      "rows_checked": 59,
+      "sample": [],
+      "table": "supplier_sku",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:supplier_sku.unit_cost",
+      "note": "",
+      "passed": true,
+      "rows_checked": 59,
+      "sample": [],
+      "table": "supplier_sku",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:supplier_sku.mean_lead_time_days",
+      "note": "",
+      "passed": true,
+      "rows_checked": 59,
+      "sample": [],
+      "table": "supplier_sku",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:sales_history.units_sold",
+      "note": "",
+      "passed": true,
+      "rows_checked": 14445,
+      "sample": [],
+      "table": "sales_history",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:sales_history.promo_depth",
+      "note": "",
+      "passed": true,
+      "rows_checked": 14445,
+      "sample": [],
+      "table": "sales_history",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:sales_history.price",
+      "note": "",
+      "passed": true,
+      "rows_checked": 14445,
+      "sample": [],
+      "table": "sales_history",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:reorder_policy.service_level",
+      "note": "",
+      "passed": true,
+      "rows_checked": 236,
+      "sample": [],
+      "table": "reorder_policy",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:forecast.forecast_units",
+      "note": "",
+      "passed": true,
+      "rows_checked": 123,
+      "sample": [],
+      "table": "forecast",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:supplier_sku.moq_multiple_of_pack_after_rounding",
+      "note": "",
+      "passed": true,
+      "rows_checked": 59,
+      "sample": [],
+      "table": "supplier_sku",
       "violations": 0
     },
     {

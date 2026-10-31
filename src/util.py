@@ -29,7 +29,39 @@ def load_config(scale: str = "starter", seed: int | None = None, overrides: dict
     cfg["scale"] = scale
     end = date.fromisoformat(cfg["end_date"])
     cfg["start_date"] = (end - timedelta(days=int(cfg["n_days"]) - 1)).isoformat()
+    validate_config(cfg)
     return cfg
+
+
+def validate_config(cfg: dict) -> None:
+    """Reject impossible parameter combinations early (C07) instead of failing or silently misbehaving later."""
+    errs = []
+    for k in ("n_skus", "n_stores", "n_days", "n_suppliers", "forecast_horizon_days", "holdout_days", "min_history_days"):
+        if not isinstance(cfg.get(k), (int, np.integer)) or int(cfg[k]) < 1:
+            errs.append(f"{k} must be an integer >= 1 (got {cfg.get(k)!r})")
+    if errs:
+        raise ValueError("invalid config: " + "; ".join(errs))
+    if int(cfg["holdout_days"]) >= int(cfg["n_days"]):
+        errs.append("holdout_days must be smaller than n_days (holdout must lie inside the history window)")
+    elif int(cfg["n_days"]) - int(cfg["holdout_days"]) < int(cfg["min_history_days"]):
+        errs.append("n_days - holdout_days must leave at least min_history_days of training history")
+    lo, hi = cfg["density"]
+    if not (0 < lo <= hi <= 1):
+        errs.append("density must satisfy 0 < low <= high <= 1")
+    if int(cfg.get("inject_per_type", 0)) < 0:
+        errs.append("inject_per_type must be >= 0")
+    for seg, sl in cfg["replenishment"]["service_levels"].items():
+        if not (0.5 <= float(sl) <= 0.999):
+            errs.append(f"service level {seg}={sl} outside [0.5, 0.999]")
+    for k in ("review_period_days", "fast_review_period_days"):
+        if int(cfg["replenishment"][k]) < 1:
+            errs.append(f"replenishment.{k} must be >= 1")
+    try:
+        date.fromisoformat(cfg["end_date"]); date.fromisoformat(cfg["as_of_date"])
+    except (ValueError, TypeError) as e:
+        errs.append(f"end_date / as_of_date must be ISO dates ({e})")
+    if errs:
+        raise ValueError("invalid config: " + "; ".join(errs))
 
 
 def rng_for(seed: int, name: str) -> np.random.Generator:

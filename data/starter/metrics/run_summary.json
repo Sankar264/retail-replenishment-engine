@@ -523,7 +523,7 @@
     "store_capacity_headroom_after_orders_min": 0.52
   },
   "rows": {
-    "exception_log": 22,
+    "exception_log": 17,
     "forecast": 123,
     "inventory_snapshot": 14445,
     "lead_time_observation": 485,
@@ -531,7 +531,7 @@
     "reorder_policy": 236,
     "sales_history": 14445,
     "sku": 50,
-    "status_event": 437,
+    "status_event": 441,
     "store": 5,
     "store_sku": 134,
     "supplier": 5,
