@@ -1,0 +1,940 @@
+[
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000001",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000005",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000006",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000007",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000010",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000013",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000015",
+  "listed_from": "2025-09-03",
+  "listed_to": "2025-12-07",
+  "status": "DELISTED"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000016",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000017",
+  "listed_from": "2026-02-01",
+  "listed_to": null,
+  "status": "PLANNED"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000020",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000021",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000022",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000024",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000027",
+  "listed_from": "2025-09-03",
+  "listed_to": "2025-10-27",
+  "status": "DELISTED"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000028",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000029",
+  "listed_from": "2025-11-08",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000030",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000033",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000034",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000035",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000038",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000039",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000042",
+  "listed_from": "2025-12-01",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000043",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000044",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000045",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000047",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000048",
+  "listed_from": "2025-10-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000001",
+  "sku_id": "SKU-000049",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000002",
+  "sku_id": "SKU-000001",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000002",
+  "sku_id": "SKU-000005",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000002",
+  "sku_id": "SKU-000007",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000002",
+  "sku_id": "SKU-000008",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000002",
+  "sku_id": "SKU-000009",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000002",
+  "sku_id": "SKU-000011",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000002",
+  "sku_id": "SKU-000017",
+  "listed_from": "2026-02-01",
+  "listed_to": null,
+  "status": "PLANNED"
+ },
+ {
+  "store_id": "STORE-000002",
+  "sku_id": "SKU-000020",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000002",
+  "sku_id": "SKU-000024",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000002",
+  "sku_id": "SKU-000029",
+  "listed_from": "2025-11-08",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000002",
+  "sku_id": "SKU-000033",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000002",
+  "sku_id": "SKU-000038",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000002",
+  "sku_id": "SKU-000044",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000002",
+  "sku_id": "SKU-000045",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000002",
+  "sku_id": "SKU-000046",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000002",
+  "sku_id": "SKU-000050",
+  "listed_from": "2025-10-02",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000005",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000006",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000009",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000010",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000013",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000016",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000017",
+  "listed_from": "2026-02-01",
+  "listed_to": null,
+  "status": "PLANNED"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000018",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000020",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000021",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000026",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000027",
+  "listed_from": "2025-09-03",
+  "listed_to": "2025-10-27",
+  "status": "DELISTED"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000028",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000032",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000035",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000038",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000040",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000041",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000003",
+  "sku_id": "SKU-000045",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000001",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000002",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000003",
+  "listed_from": "2025-11-21",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000004",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000007",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000008",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000009",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000010",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000011",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000012",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000013",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000014",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000015",
+  "listed_from": "2025-09-03",
+  "listed_to": "2025-12-07",
+  "status": "DELISTED"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000016",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000017",
+  "listed_from": "2026-02-01",
+  "listed_to": null,
+  "status": "PLANNED"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000018",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000019",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000020",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000022",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000023",
+  "listed_from": "2025-11-04",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000026",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000027",
+  "listed_from": "2025-09-03",
+  "listed_to": "2025-10-27",
+  "status": "DELISTED"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000029",
+  "listed_from": "2025-11-08",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000030",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000031",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000032",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000033",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000034",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000036",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000037",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000038",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000039",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000040",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000041",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000042",
+  "listed_from": "2025-12-01",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000043",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000044",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000045",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000046",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000047",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000004",
+  "sku_id": "SKU-000049",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000001",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000002",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000003",
+  "listed_from": "2025-11-21",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000004",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000006",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000007",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000008",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000009",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000010",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000016",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000017",
+  "listed_from": "2026-02-01",
+  "listed_to": null,
+  "status": "PLANNED"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000020",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000021",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000022",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000024",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000025",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000027",
+  "listed_from": "2025-09-03",
+  "listed_to": "2025-10-27",
+  "status": "DELISTED"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000029",
+  "listed_from": "2025-11-08",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000030",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000031",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000032",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000033",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000034",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000035",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000037",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000039",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000040",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000041",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ },
+ {
+  "store_id": "STORE-000005",
+  "sku_id": "SKU-000046",
+  "listed_from": "2025-09-03",
+  "listed_to": null,
+  "status": "ACTIVE"
+ }
+]

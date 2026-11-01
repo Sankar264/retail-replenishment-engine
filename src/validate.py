@@ -113,6 +113,22 @@ def run_validation(tables: dict, aux: dict, cfg: dict) -> dict:
                 bad = int(((cc[0] < 0) | (cc[1] < 0) | ~np.isin(cc[0] * width + cc[1], pcodes)).sum())
             ck.add(f"fk:{name}({','.join(cols)})->{parent}", "foreign_key", name, len(child), bad_idx=range(bad))
 
+    # -------- range checks on master data + recommendation arithmetic / linkage (C02, C07) ---------------
+    ssk = tables["supplier_sku"]
+    ck.add("range:supplier_sku.pack_size", "range", "supplier_sku", len(ssk), bad_idx=np.nonzero((ssk["pack_size"] < 1).to_numpy())[0])
+    ck.add("range:supplier_sku.moq", "range", "supplier_sku", len(ssk), bad_idx=np.nonzero((ssk["moq"] < 0).to_numpy())[0])
+    ck.add("range:supplier_sku.unit_cost", "range", "supplier_sku", len(ssk), bad_idx=np.nonzero((ssk["unit_cost"] <= 0).to_numpy())[0])
+    po_ = tables["purchase_recommendation"]
+    has_cost = po_["unit_cost"].notna()
+    exp_val = (po_["recommended_qty"].astype(float) * po_["unit_cost"].astype(float)).round(2)
+    bad_val = has_cost & ((po_["order_value"].astype(float) - exp_val).abs() > 0.011)
+    ck.add("reconcile.order_value=qty*unit_cost", "reconciliation", "purchase_recommendation", int(has_cost.sum()), bad_idx=np.nonzero(bad_val.to_numpy())[0])
+    linked = po_[po_["policy_id"].notna()]
+    pol_keys = tables["reorder_policy"].set_index("policy_id")[["store_id", "sku_id"]]
+    j = linked.join(pol_keys, on="policy_id", rsuffix="_pol")
+    bad_link = j["store_id_pol"].notna() & ((j["store_id"] != j["store_id_pol"]) | (j["sku_id"] != j["sku_id_pol"]))
+    ck.add("reconcile.policy_id_points_to_same_store_sku", "reconciliation", "purchase_recommendation", len(linked), bad_idx=np.nonzero(bad_link.to_numpy())[0])
+
     sku = tables["sku"]
     sales, inv, lt = tables["sales_history"], tables["inventory_snapshot"], tables["lead_time_observation"]
     n_s = len(sales)

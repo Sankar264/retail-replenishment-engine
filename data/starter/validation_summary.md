@@ -4,7 +4,7 @@ Scale: `starter` | seed: `20261022` | history: 2025-09-03 to 2025-12-31 (120 day
 
 ## 1. Clean baseline (before anomaly injection)
 
-- Structural checks: **248**, violations: **0**
+- Structural checks: **253**, violations: **0**
 - Anomaly detectors on the clean baseline (expected 0): {'detect.stockout_flagged_as_zero_demand': 0, 'detect.order_qty_not_multiple_of_pack_size': 0, 'detect.discontinued_sku_recommended': 0, 'detect.negative_lead_time': 0, 'detect.forecast_uses_future_sales': 0}
 
 | category | checks | rows checked | violations | failed checks |
@@ -17,8 +17,8 @@ Scale: `starter` | seed: `20261022` | history: 2025-09-03 to 2025-12-31 (120 day
 | id_format | 10 | 29946 | 0 | 0 |
 | lifecycle | 6 | 29666 | 0 | 0 |
 | primary_key | 13 | 30474 | 0 | 0 |
-| range | 16 | 58623 | 0 | 0 |
-| reconciliation | 17 | 102648 | 0 | 0 |
+| range | 19 | 58800 | 0 | 0 |
+| reconciliation | 19 | 102702 | 0 | 0 |
 | required | 122 | 276097 | 0 | 0 |
 | schema | 13 | 30474 | 0 | 0 |
 
@@ -242,6 +242,11 @@ Run `python -m src.reproduce --scale starter` (or `make reproduce`) - it execute
 | `required:exception_log.severity` | required | 22 | 0 |
 | `enum:exception_log.severity` | enum | 22 | 0 |
 | `pk_unique:exception_log` | primary_key | 22 | 0 |
+| `range:supplier_sku.pack_size` | range | 59 | 0 |
+| `range:supplier_sku.moq` | range | 59 | 0 |
+| `range:supplier_sku.unit_cost` | range | 59 | 0 |
+| `reconcile.order_value=qty*unit_cost` | reconciliation | 34 | 0 |
+| `reconcile.policy_id_points_to_same_store_sku` | reconciliation | 20 | 0 |
 | `lifecycle.no_sales_before_launch` | lifecycle | 14445 | 0 |
 | `lifecycle.no_sales_on_or_after_discontinue` | lifecycle | 14445 | 0 |
 | `date_order:sku.launch<discontinue` | date_order | 50 | 0 |

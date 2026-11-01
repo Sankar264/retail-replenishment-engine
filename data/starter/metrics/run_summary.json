@@ -500,6 +500,11 @@
     "train_days": 90,
     "train_end_date": "2025-12-01"
   },
+  "post_injection_evaluation": {
+    "n_blocked": 15,
+    "n_orders_drafted": 19,
+    "population": "AFTER INJECTION (labelled anomalies present; not a business KPI)"
+  },
   "replenishment": {
     "as_of_date": "2026-01-01",
     "blocked_by_reason": {
@@ -520,6 +525,7 @@
     "ordered_value": 3180.64,
     "orders_exactly_at_moq": 3,
     "pairs_with_inventory_position_equal_reorder_point": 0,
+    "population": "CLEAN BASELINE (before anomaly injection)",
     "store_capacity_headroom_after_orders_min": 0.52
   },
   "rows": {

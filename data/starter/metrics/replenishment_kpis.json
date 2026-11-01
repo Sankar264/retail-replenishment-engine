@@ -27,6 +27,7 @@
     "ordered_value": 3180.64,
     "orders_exactly_at_moq": 3,
     "pairs_with_inventory_position_equal_reorder_point": 0,
+    "population": "CLEAN BASELINE (before anomaly injection)",
     "store_capacity_headroom_after_orders_min": 0.52
   }
 }

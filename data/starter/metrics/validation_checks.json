@@ -1971,6 +1971,56 @@
       "violations": 0
     },
     {
+      "category": "range",
+      "check": "range:supplier_sku.pack_size",
+      "note": "",
+      "passed": true,
+      "rows_checked": 59,
+      "sample": [],
+      "table": "supplier_sku",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:supplier_sku.moq",
+      "note": "",
+      "passed": true,
+      "rows_checked": 59,
+      "sample": [],
+      "table": "supplier_sku",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:supplier_sku.unit_cost",
+      "note": "",
+      "passed": true,
+      "rows_checked": 59,
+      "sample": [],
+      "table": "supplier_sku",
+      "violations": 0
+    },
+    {
+      "category": "reconciliation",
+      "check": "reconcile.order_value=qty*unit_cost",
+      "note": "",
+      "passed": true,
+      "rows_checked": 34,
+      "sample": [],
+      "table": "purchase_recommendation",
+      "violations": 0
+    },
+    {
+      "category": "reconciliation",
+      "check": "reconcile.policy_id_points_to_same_store_sku",
+      "note": "",
+      "passed": true,
+      "rows_checked": 20,
+      "sample": [],
+      "table": "purchase_recommendation",
+      "violations": 0
+    },
+    {
       "category": "lifecycle",
       "check": "lifecycle.no_sales_before_launch",
       "note": "",
@@ -4500,6 +4550,56 @@
       "rows_checked": 17,
       "sample": [],
       "table": "exception_log",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:supplier_sku.pack_size",
+      "note": "",
+      "passed": true,
+      "rows_checked": 59,
+      "sample": [],
+      "table": "supplier_sku",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:supplier_sku.moq",
+      "note": "",
+      "passed": true,
+      "rows_checked": 59,
+      "sample": [],
+      "table": "supplier_sku",
+      "violations": 0
+    },
+    {
+      "category": "range",
+      "check": "range:supplier_sku.unit_cost",
+      "note": "",
+      "passed": true,
+      "rows_checked": 59,
+      "sample": [],
+      "table": "supplier_sku",
+      "violations": 0
+    },
+    {
+      "category": "reconciliation",
+      "check": "reconcile.order_value=qty*unit_cost",
+      "note": "",
+      "passed": true,
+      "rows_checked": 34,
+      "sample": [],
+      "table": "purchase_recommendation",
+      "violations": 0
+    },
+    {
+      "category": "reconciliation",
+      "check": "reconcile.policy_id_points_to_same_store_sku",
+      "note": "",
+      "passed": true,
+      "rows_checked": 20,
+      "sample": [],
+      "table": "purchase_recommendation",
       "violations": 0
     },
     {

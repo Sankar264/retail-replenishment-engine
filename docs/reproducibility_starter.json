@@ -1,6 +1,8 @@
 {
   "all_checksums_identical": true,
   "checksums_run1": {
+    "clean_baseline/tables/exception_log.csv": "fd5b3a19569c7ac2db17b8eb343c3d6e9a9c9529f2c74ef3590fd5c90461141c",
+    "clean_baseline/tables/purchase_recommendation.csv": "3dcd0f2e3eb8570a6826278de31f2b6088e99ea9e3d7e5135e06bff5ccafd86a",
     "ground_truth/censored_demand.csv": "553c03a1fb9be3b298ce0e8bda2ef60c49305ab8b35dc24ab2d6b9514f9fe525",
     "ground_truth/ground_truth.csv": "29883c9efef7cced8554d1b5a97160a7058ac33cc962dd9e4ee539220badf1f9",
     "ground_truth/ground_truth.json": "33ccede61114c38efb7383d394e0313d648d21554189d8063bd5ca568babe417",
@@ -21,10 +23,10 @@
     "metrics/detector_scores.json": "1e20cbc6a1d3dc252f2009c7f6a70e83dd72dc8e09fd6788de17ca59d9d34d29",
     "metrics/edge_case_coverage.json": "8b584a341232365d55e5328e06fb3db40659d9c2d91d10ea2e0dafe3d59acabb",
     "metrics/forecast_holdout_metrics.json": "154304fe363ee0a7be262d64d692bfd72bca6928b4ef84ce2d7626e66a5101d7",
-    "metrics/replenishment_kpis.json": "74d3c8a29333f92614bb8794018d8ce01fa43e6b3f404e82294918afd5a52da5",
-    "metrics/run_summary.json": "f49a060224001650e80b41013b6aa549f879f40d0205cd99ba4938c07335ca40",
-    "metrics/validation_checks.json": "4820ce84e1fb09c2b559227930b97e2e760c3fad72a287a46f8acf8d051a0b6f",
-    "reports/report.html": "33af13f7101327c7d62ab12c09e52867e39f407a449d3b15369a16a7904015a8",
+    "metrics/replenishment_kpis.json": "7e36b2faafa3cb753c98a7f24749057470f2b4fb293d0ea3711c8e83c76d0608",
+    "metrics/run_summary.json": "f4d5667c45cfcd732dd9a6cbd809880e499887e91fdeb729a8fb600280f89741",
+    "metrics/validation_checks.json": "1cc68451541bd078e9863e91bb03623787a7461120a60b7d4b95a394f9e71024",
+    "reports/report.html": "37d2821740144fbb37449b029588c09d591c377726bf41550090e5cf7b5e3328",
     "run_manifest.json": "31ae6adab24cba89afbd7fc1d8b381525d7a06e0050eb4e13738a33a016a151e",
     "source_manifest.json": "79816117f41e87e97334051f03385df226f81065ec1a8f954148f4e61b52f504",
     "sql/schema.sql": "0ae91c90ab656d30236bc7fed979d83949d71c703f22fd263b6def8799ab8ca6",
@@ -42,9 +44,9 @@
     "tables/store_sku.csv": "b4b2053722052a02e83d1f2bce43572766969ea6b92e42282b8feecc62076f48",
     "tables/supplier.csv": "16f507f079a9aec52db4467c0b6c53fe126c3a2c2c202edb1a7cb9ff9c5eb073",
     "tables/supplier_sku.csv": "83545b124e38b82b5bdf600502a9d5fd2b6c11609143d6255811f6094ca51142",
-    "validation_summary.md": "2fa91d7554c1eca73dc4da29f45c9ccbb98d67f7e7b11082471b6a9c89efcd3f"
+    "validation_summary.md": "bb16faaacf881a7d4dcd7613a1f950c3b35cb3628dab47eac0b3259f76226507"
   },
-  "files_compared": 42,
+  "files_compared": 44,
   "mismatched_files": [],
   "row_counts": {
     "exception_log": 17,

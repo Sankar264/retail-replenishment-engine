@@ -1,0 +1,8 @@
+{
+  "external_datasets": [],
+  "fields_discarded": [],
+  "licence": "Code and generated data: MIT (see LICENSE).",
+  "notes": "All records are produced by src/generate.py from a fixed seed. No personal, confidential or third-party licensed data was collected, scraped or redistributed. Schema design was inspired by common retail replenishment data models (SKU / store / supplier master, sales and inventory snapshots) - no public dataset values were copied.",
+  "provenance": "FULLY SYNTHETIC - no external data used",
+  "transformations": []
+}
