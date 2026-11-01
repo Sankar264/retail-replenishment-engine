@@ -157,3 +157,22 @@ tests/               docs/    scripts/package_zip.py    Makefile    requirements
 
 100 % synthetic. No external datasets, scraping or personal data (`source_manifest.json`).
 # retail-replenishment-engine
+## Limitations and next steps
+
+**What works:** deterministic generator (seed 20261022, same code for all scales), 10 core entities + bridge/event tables,
+temporal-holdout forecasting on stockout-censored data, reorder policy and purchase recommendations (pack size, MOQ, capacity),
+five labelled anomalies with detectors, fail-closed validation gates, reproducibility checks.
+
+**Known limitations**
+- Daily demand is highly intermittent, so daily WAPE is dominated by noise; the hybrid beats naive baselines only modestly (see `metrics/forecast_holdout_metrics.json`).
+- The starter preset covers 120 days (smaller than the 365-day full preset); full scale needs about 3 GB RAM and a few minutes.
+- Capacity is calibrated from simulated peak utilisation, not real warehouse data. All data is synthetic.
+- Single forecast month (2026-01) and one policy version change; no multi-period rolling re-planning.
+- The full dataset (~1.1 GB) is not committed; regenerate it with the command above.
+- `tests/run_all.py` cannot run pytest fixtures; use `python -m pytest -q`.
+
+**Next steps:** rolling-origin evaluation, probabilistic forecasts, supplier-specific service levels, multi-echelon constraints.
+
+## AI usage
+See [`AI_USAGE.md`](AI_USAGE.md) and [`prompts/`](prompts/).
+
